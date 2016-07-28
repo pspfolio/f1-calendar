@@ -21,6 +21,14 @@ describe('<Navigation />', () => {
         const wrapper = shallow(<Navigation nav={navData} />);
         const nav = wrapper.find('.nav').first();
         expect(nav.find('img')).to.have.length(1);
+    }),
+
+    it('renders racetrack name inside navigation elment', () => {
+        const wrapper = shallow(<Navigation nav={navData} />);
+        const firstNavElement = wrapper.find('.nav').first();
+        const lastNavElement = wrapper.find('.nav').last();
+        expect(firstNavElement.find('p').text()).to.eql('Spanish');
+        expect(lastNavElement.find('p').text()).to.eql('Italian');
     })
 
 });
