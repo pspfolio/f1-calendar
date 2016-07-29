@@ -10,7 +10,6 @@ const router = (
     <Router history={browserHistory}>
         <Route path="/" component={Main}>
             <IndexRoute component={Info}></IndexRoute>
-
         </Route>
     </Router>
 )
