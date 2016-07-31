@@ -6,6 +6,7 @@ import * as actions from './actions';
 
 import Info from './components/Info/Info';
 import Main from './components/Main/Main';
+import './normalize.css';
 import './index.css';
 
 const nav = [

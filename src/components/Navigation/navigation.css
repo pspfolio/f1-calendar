@@ -8,9 +8,11 @@
     width: 10%;
     min-height: 100%;
     flex-direction: column;
-    justify-content: space-between;;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
 }
 
-.nav-item {
-
+.nav-item time {
+    
 }
