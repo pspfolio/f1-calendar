@@ -10,10 +10,12 @@ import './index.css';
 
 const nav = [
     {
-        imgSrc: "http://vignette3.wikia.nocookie.net/rr3/images/e/e8/Circuit_Catalunya_2007.svg/revision/latest?cb=20160413121045", name: "Spanish"
+        time: '22 - 24 jul',
+        name: 'Spanish'
     },
     {
-        imgSrc: "http://vignette3.wikia.nocookie.net/rr3/images/e/e8/Circuit_Catalunya_2007.svg/revision/latest?cb=20160413121045", name: "Italian"
+        time: '22 - 24 oct',
+        name: 'Italian'
     }
 ];
 

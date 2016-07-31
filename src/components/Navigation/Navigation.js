@@ -4,8 +4,8 @@ const Navigation = React.createClass({
     renderNav(data) {
         return(
             <div className="nav" key={data.name}>
-                <img src={data.imgSrc} alt={data.name} />
-                <p>{data.name}</p>
+                <p className="grandprix-name">{data.name}</p>
+                <time className="grandprix-time">{data.time}</time>
             </div>
         )
     },

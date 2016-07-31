@@ -6,10 +6,10 @@ import { expect } from 'chai';
 describe('<Navigation />', () => {
 
     const navData = [
-        {imgSrc:"http://vignette3.wikia.nocookie.net/rr3/images/e/e8/Circuit_Catalunya_2007.svg/revision/latest?cb=20160413121045",
-        name: "Spanish"},
-        {imgSrc: "http://vignette3.wikia.nocookie.net/rr3/images/e/e8/Circuit_Catalunya_2007.svg/revision/latest?cb=20160413121045",
-        name: "Italian"}
+        {time:'22 - 24 Jul',
+        name: 'Spanish'},
+        {time: '15 - 18 Oct',
+        name: 'Italian'}
     ];
 
     it('renders two navigation elements', () => {
@@ -17,10 +17,10 @@ describe('<Navigation />', () => {
         expect(wrapper.find('.nav')).to.have.length(2);
     }),
 
-    it('renders image inside navigation element', () => {
+    it('renders time inside navigation element', () => {
         const wrapper = shallow(<Navigation nav={navData} />);
         const nav = wrapper.find('.nav').first();
-        expect(nav.find('img')).to.have.length(1);
+        expect(nav.find('time')).to.have.length(1);
     }),
 
     it('renders racetrack name inside navigation elment', () => {
