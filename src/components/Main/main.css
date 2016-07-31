@@ -1,0 +1,10 @@
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    min-height:100vh;
+    width: 100%;
+}

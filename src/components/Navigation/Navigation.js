@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './navigation.css';
+
 const Navigation = React.createClass({
     renderNav(data) {
         return(
-            <div className="nav" key={data.name}>
+            <div className="nav-item" key={data.name}>
                 <p className="grandprix-name">{data.name}</p>
                 <time className="grandprix-time">{data.time}</time>
             </div>
@@ -13,7 +15,7 @@ const Navigation = React.createClass({
     render() {
         const { nav } = this.props;
         return(
-            <nav>
+            <nav className="nav">
                 {nav.map(this.renderNav)}
             </nav>
         )

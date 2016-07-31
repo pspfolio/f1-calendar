@@ -1,6 +1,8 @@
 import React from 'react';
 import Navigation from '../Navigation/Navigation';
 
+import './main.css';
+
 const Main = React.createClass({
     render() {
         const data = [
@@ -14,8 +16,8 @@ const Main = React.createClass({
             }
         ]
         return(
-            <div>
-                <Navigation nav={data}/>
+            <div className="container">
+                <Navigation className="nav" nav={data}/>
                 <div className="container">
                     {React.cloneElement(this.props.children, this.props)}
                 </div>
