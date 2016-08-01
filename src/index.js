@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import configureStore from './stores/configureStore';
 import * as actions from './actions';
@@ -24,11 +25,13 @@ const store = configureStore();
 store.dispatch(actions.setNavigation(nav));
 
 const router = (
-    <Router history={browserHistory}>
-        <Route path="/" component={Main}>
-            <IndexRoute component={Info}></IndexRoute>
-        </Route>
-    </Router>
+    <Provider store={store}>
+        <Router history={browserHistory}>
+            <Route path="/" component={Main}>
+                <IndexRoute component={Info}></IndexRoute>
+            </Route>
+        </Router>
+    </Provider>
 )
 
 ReactDOM.render(

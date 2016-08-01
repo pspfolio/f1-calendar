@@ -2,7 +2,7 @@ import React from 'react';
 
 import './navigation.css';
 
-const Navigation = React.createClass({
+const NavigationList = React.createClass({
     renderNav(data) {
         return(
             <div className="nav-item" key={data.name}>
@@ -22,4 +22,4 @@ const Navigation = React.createClass({
     }
 });
 
-export default Navigation;
+export default NavigationList;
