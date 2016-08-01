@@ -1,22 +1,16 @@
 import React from 'react';
+import Navigation from '../Navigation/Navigation';
 
-import './navigation.css';
+import './navigationList.css';
 
 const NavigationList = React.createClass({
-    renderNav(data) {
-        return(
-            <div className="nav-item" key={data.name}>
-                <p className="grandprix-name">{data.name}</p>
-                <time className="grandprix-time">{data.time}</time>
-            </div>
-        )
-    },
-
     render() {
         const { nav } = this.props;
         return(
             <nav className="nav">
-                {nav.map(this.renderNav)}
+                {nav.map( nav =>
+                    <Navigation key={nav.name} name={nav.name} time={nav.time} />
+                )}
             </nav>
         )
     }
