@@ -13,7 +13,7 @@ describe('<NavigationList />', () => {
         name: 'Italian'}
     ];
 
-    it('renders two navigation elements', () => {
+    it('renders two navigation components', () => {
         const wrapper = shallow(<NavigationList nav={navData}/>);
         expect(wrapper.find(Navigation)).to.have.length(2);
     })

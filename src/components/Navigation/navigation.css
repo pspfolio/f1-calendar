@@ -1,0 +1,13 @@
+.nav-item {
+    text-align: center;
+}
+
+.nav-item .grandprix-name {
+    margin: 0;
+    font-size: .9em;
+}
+
+.nav-item .grandprix-time {
+    font-size: .6em;
+    color: #898989;
+}

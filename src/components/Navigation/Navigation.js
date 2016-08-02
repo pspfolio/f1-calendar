@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './navigation.css';
+
 const Navigation = React.createClass({
     render() {
         const { name, time } = this.props;
