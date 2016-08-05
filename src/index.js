@@ -7,17 +7,26 @@ import * as actions from './actions';
 
 import Info from './components/Info/Info';
 import Main from './components/Main/Main';
+import GrandPrix from './components/GrandPrix/GrandPrix';
+
 import './normalize.css';
 import './index.css';
 
 const nav = [
     {
         time: '22 - 24 jul',
-        name: 'Spanish'
+        name: 'Spanish',
+        active: false
     },
     {
         time: '22 - 24 oct',
-        name: 'Italian'
+        name: 'Italian',
+        active: false
+    },
+    {
+        time: '22 - 24 oct',
+        name: 'Belgium',
+        active: false
     }
 ];
 
@@ -29,6 +38,7 @@ const router = (
         <Router history={browserHistory}>
             <Route path="/" component={Main}>
                 <IndexRoute component={Info}></IndexRoute>
+                <Route path="grandprix/:name" component={GrandPrix}></Route>
             </Route>
         </Router>
     </Provider>

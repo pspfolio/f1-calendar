@@ -3,9 +3,9 @@ import Navigation from '../Navigation/Navigation';
 
 import './navigationList.css';
 
-const NavigationList = ({nav}) => (
+const NavigationList = ({navigation}) => (
     <nav className="nav">
-        {nav.map( nav =>
+        {navigation.map( nav =>
             <Navigation key={nav.name} name={nav.name} time={nav.time} />
         )}
     </nav>
