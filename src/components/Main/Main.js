@@ -1,6 +1,5 @@
 import React from 'react';
-import NavigationList from '../NavigationList/NavigationList';
-
+import NavigationList from '../../containers/NavigationList';
 import './main.css';
 
 const Main = React.createClass({
