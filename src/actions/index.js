@@ -1,5 +1,6 @@
-import { setNavigation } from './actionCreators';
+import { setNavigation, setNavigationToActive } from './actionCreators';
 
 export {
-    setNavigation
+    setNavigation,
+    setNavigationToActive
 };

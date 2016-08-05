@@ -14,7 +14,7 @@ describe('<NavigationList />', () => {
     ];
 
     it('renders two navigation components', () => {
-        const wrapper = shallow(<NavigationList nav={navData}/>);
+        const wrapper = shallow(<NavigationList navigation={navData}/>);
         expect(wrapper.find(Navigation)).to.have.length(2);
     })
 });
