@@ -6,7 +6,7 @@ const Main = React.createClass({
     render() {
         return(
             <div className="container">
-                <NavigationList className="nav"/>
+                <NavigationList className="nav" {...this.props}/>
                 <div className="container">
                     {React.cloneElement(this.props.children, this.props)}
                 </div>

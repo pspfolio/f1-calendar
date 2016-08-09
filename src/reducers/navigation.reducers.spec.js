@@ -24,7 +24,7 @@ describe('Navigation reducer', () => {
         }
     ];
 
-    it('sets navigation object property active to true', () => {
+    /*it('sets navigation object property active to true', () => {
         const name = 'Belgium';
         const action = actions.setNavigationToActive(name);
         const result = NavigationReducer(navData, action)
@@ -38,5 +38,5 @@ describe('Navigation reducer', () => {
         const result = NavigationReducer(navData, action);
         expect(result.filter(t => t.name === 'Spanish')[0].active).to.equal(false);
         expect(result.filter(t => t.name === name)[0].active).to.equal(true);
-    })
+    })*/
 });

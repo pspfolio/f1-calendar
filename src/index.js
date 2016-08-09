@@ -15,18 +15,15 @@ import './index.css';
 const nav = [
     {
         time: '22 - 24 jul',
-        name: 'Spanish',
-        active: false
+        name: 'Spanish'
     },
     {
         time: '22 - 24 oct',
-        name: 'Italian',
-        active: false
+        name: 'Italian'
     },
     {
         time: '22 - 24 oct',
-        name: 'Belgium',
-        active: false
+        name: 'Belgium'
     }
 ];
 

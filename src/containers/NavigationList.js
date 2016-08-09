@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import NavigationList from '../components/NavigationList/NavigationList';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
     return {
-        navigation: state.navigation
+        navigation: state.navigation,
+        activeLinkName: ownProps.params.name ? ownProps.params.name : ''
     }
 }
 
