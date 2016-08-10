@@ -1,8 +1,10 @@
 import React from 'react';
 
-const GrandPrix = () => (
+const GrandPrix = ({ grandPrix }) => (
     <div className="grand-prix">
-        <h2>this is grand prix</h2>
+        {grandPrix.map((gp) =>
+                <h2>{gp.name}</h2>
+        )}
     </div>
 )
 

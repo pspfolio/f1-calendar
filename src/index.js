@@ -7,7 +7,7 @@ import * as actions from './actions';
 
 import Info from './components/Info/Info';
 import Main from './components/Main/Main';
-import GrandPrix from './components/GrandPrix/GrandPrix';
+import GrandPrix from './containers/GrandPrix';
 
 import './normalize.css';
 import './index.css';
