@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
-import * as actions from '../actions';
-import NavigationReducer from './navigation';
+import * as actions from '../../actions';
+import NavigationReducer from './index';
 
 
 describe('Navigation reducer', () => {
