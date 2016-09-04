@@ -29,6 +29,7 @@ const nav = [
 
 const store = configureStore();
 store.dispatch(actions.setNavigation(nav));
+store.dispatch(actions.setGrandPrix('italian'));
 
 const router = (
     <Provider store={store}>

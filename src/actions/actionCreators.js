@@ -16,7 +16,6 @@ export function setGrandPrix(name) {
             date: '19.20.1988',
             winner: 'Kimi Raikkonen',
             gpResults: ['Kimi Raikkonen', 'Sebastian Vettel']
-        },
-        name
+        }
     }
 }
