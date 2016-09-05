@@ -15,7 +15,6 @@ export default function(state = initalState, action) {
     vain pelkästään function setGrandPrix,
     jos ei tule muita grandprix actioneita */
 function grandPrix(state, action) {
-  console.log('action', action);
     switch (action.type) {
         case GRANDPRIX_SET:
             return {

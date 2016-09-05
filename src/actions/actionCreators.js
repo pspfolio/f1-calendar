@@ -12,7 +12,7 @@ export function setGrandPrix(name) {
     return {
         type: actionTypes.GRANDPRIX_SET,
         grandPrix: {
-            name: 'Spanish',
+            name,
             date: '19.20.1988',
             winner: 'Kimi Raikkonen',
             gpResults: ['Kimi Raikkonen', 'Sebastian Vettel']
