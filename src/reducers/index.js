@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import navigation from './navigation';
-import grandprix from './grandprix';
+import grandprixs from './grandprix';
 
 export default combineReducers({
-    grandprix,
+    grandprixs,
     navigation
 });

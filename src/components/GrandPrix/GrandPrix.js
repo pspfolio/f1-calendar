@@ -1,11 +1,22 @@
 import React from 'react';
 
-const GrandPrix = ({ grandPrix }) => (
-    <div className="grand-prix">
-        {grandPrix.map((gp) =>
-                <h2>{gp.name}</h2>
-        )}
-    </div>
-)
+const Grandprix = React.createClass({
+  render () {
+    const { grandprix } = this.props
 
-export default GrandPrix;
+    let gp;
+    if (grandprix) {
+      gp = <h2>{grandprix.name}</h2>
+    } else {
+      gp = <h2>Not found</h2>
+    }
+    
+    return (
+      <div className="grand-prix">
+        {gp}
+      </div>
+    )
+  }
+})
+
+export default Grandprix;
