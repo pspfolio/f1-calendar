@@ -11,6 +11,7 @@ const NavigationList = ({ navigation, activeLinkName }) =>  {
                     key={nav.raceName}
                     name={nav.Circuit.Location.country}
                     time={nav.date}
+                    raceId={nav.round}
                     active={nav.Circuit.Location.country.toLowerCase() === activeLinkName.toLowerCase()}
                 />
             )}
