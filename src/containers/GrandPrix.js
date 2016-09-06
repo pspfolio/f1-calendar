@@ -1,5 +1,21 @@
-import { connect } from 'react-redux';
-import GrandPrix from '../components/GrandPrix/GrandPrix';
+import React from 'react'
+import { connect } from 'react-redux'
+import GrandPrix from '../components/GrandPrix/GrandPrix'
+
+const GrandprixApp = React.createClass({
+  componentDidMount() {
+    const { dispatch } = this.props
+    //dispatch(setGrandPrix('test'));
+    // dispatch with grandprix name. In action make sure only fetch if needed
+  },
+
+  render () {
+    const { grandprix } = this.props;
+    return(
+      <GrandPrix grandprix={grandprix} />
+    )
+  }
+})
 
 const getGrandprix = (grandprixs, location) => {
   var result = grandprixs.filter((gp) => gp.name.toLowerCase() === location.toLowerCase());
@@ -12,6 +28,6 @@ function mapStateToProps(state, ownProps) {
     }
 }
 
-const GP = connect(mapStateToProps)(GrandPrix);
+const GP = connect(mapStateToProps)(GrandprixApp);
 
 export default GP;

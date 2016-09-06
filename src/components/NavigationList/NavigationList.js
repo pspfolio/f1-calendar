@@ -1,5 +1,5 @@
-import React from 'react';
-import Navigation from '../Navigation/Navigation';
+import React from 'react'
+import Navigation from '../Navigation/Navigation'
 
 import './navigationList.css';
 
@@ -8,10 +8,10 @@ const NavigationList = ({ navigation, activeLinkName }) =>  {
         <nav className="nav">
             {navigation.map( nav =>
                 <Navigation
-                    key={nav.name}
-                    name={nav.name}
-                    time={nav.time}
-                    active={nav.name.toLowerCase() === activeLinkName.toLowerCase()} 
+                    key={nav.raceName}
+                    name={nav.Circuit.Location.country}
+                    time={nav.date}
+                    active={nav.Circuit.Location.country.toLowerCase() === activeLinkName.toLowerCase()}
                 />
             )}
         </nav>
