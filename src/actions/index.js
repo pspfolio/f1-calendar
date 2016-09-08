@@ -1,6 +1,6 @@
-import { setGrandPrix, fetchNavigationIfNeeded } from './actionCreators';
+import { fetchGrandPrix, fetchNavigationIfNeeded } from './actionCreators';
 
 export {
     fetchNavigationIfNeeded,
-    setGrandPrix
+    fetchGrandPrix
 };

@@ -1,12 +1,28 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { fetchGrandPrix } from '../actions'
 import GrandPrix from '../components/GrandPrix/GrandPrix'
 
 const GrandprixApp = React.createClass({
+
   componentDidMount() {
+    console.log(this.props.params)
+    const { raceId } = this.props.params
+    this.getData(raceId)
+  },
+
+  componentWillReceiveProps(props) {
+    const { raceId } = props.params
+    this.getData(raceId)
+  },
+
+  getData(id) {
     const { dispatch } = this.props
+
+    // TODO get race details by raceId
     //dispatch(setGrandPrix('test'));
     // dispatch with grandprix name. In action make sure only fetch if needed
+    dispatch(fetchGrandPrix(id))
   },
 
   render () {

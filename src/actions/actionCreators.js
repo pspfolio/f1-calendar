@@ -1,24 +1,34 @@
 import fetch from 'isomorphic-fetch'
 import * as actionTypes from '../constants/actionTypes';
 
-export function setNavigation(navData) {
+function setNavigation(navData) {
     return {
         type: actionTypes.NAVIGATION_SET,
         navData: navData.MRData.RaceTable.Races
     }
 }
 
-export function setGrandPrix(name) {
+function setGrandPrix(data) {
     // TODO FETCH DATA HERE with name
+    var race = data.MRData.RaceTable.Races[0]
+    console.log(data.MRData.RaceTable.Races[0])
     return {
         type: actionTypes.GRANDPRIX_SET,
         grandPrix: {
-            name,
-            date: '19.20.1988',
-            winner: 'Kimi Raikkonen',
-            gpResults: ['Kimi Raikkonen', 'Sebastian Vettel']
+            name: race.raceName,
+            round: race.round,
+            date: race.date,
+            gpResults: race.Results
         }
     }
+}
+
+export function fetchGrandPrix(id) {
+  return dispatch => {
+  return fetch(`http://ergast.com/api/f1/current/${id}/results.json`)
+    .then(response => response.json())
+    .then(json => dispatch(setGrandPrix(json)))
+  }
 }
 
 function fetchNavigation() {
