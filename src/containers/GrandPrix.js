@@ -6,11 +6,13 @@ import GrandPrix from '../components/GrandPrix/GrandPrix'
 const GrandprixApp = React.createClass({
 
   componentDidMount() {
+    console.log('COMPONENT DID MOUNT')
     const { raceId } = this.props.params
     this.getData(raceId)
   },
 
   componentWillReceiveProps(props) {
+  console.log('RECEIVE PROPS')
     const { raceId } = props.params
     this.getData(raceId)
   },
@@ -32,14 +34,14 @@ const GrandprixApp = React.createClass({
   }
 })
 
-const getGrandprix = (grandprixs, location) => {
-  var result = grandprixs.filter((gp) => gp.name.toLowerCase() === location.toLowerCase());
+const getGrandprix = (grandprixs, round) => {
+  var result = grandprixs.filter((gp) => gp.round === round);
   return result[0];
 }
 
 function mapStateToProps(state, ownProps) {
     return {
-        grandprix: getGrandprix(state.grandprixs, ownProps.params.name)
+        grandprix: getGrandprix(state.grandprixs, ownProps.params.raceId)
     }
 }
 
