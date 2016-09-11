@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { fetchGrandPrix } from '../actions'
+import { fetchGrandPrixIfNeeded } from '../actions'
 import GrandPrix from '../components/GrandPrix/GrandPrix'
 
 const GrandprixApp = React.createClass({
@@ -23,7 +23,7 @@ const GrandprixApp = React.createClass({
     // TODO get race details by raceId
     //dispatch(setGrandPrix('test'));
     // dispatch with grandprix name. In action make sure only fetch if needed
-    dispatch(fetchGrandPrix(id))
+    dispatch(fetchGrandPrixIfNeeded(id))
   },
 
   render () {

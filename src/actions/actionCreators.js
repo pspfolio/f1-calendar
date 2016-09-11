@@ -1,11 +1,12 @@
 import fetch from 'isomorphic-fetch'
 import * as actionTypes from '../constants/actionTypes';
 
-function setNavigation(navData) {
-    return {
-        type: actionTypes.NAVIGATION_SET,
-        navData: navData.MRData.RaceTable.Races
+export function fetchGrandPrixIfNeeded(raceId) {
+  return (dispatch, getState) => {
+    if (shouldFetchGrandPrix(getState(), raceId)) {
+      return dispatch(fetchGrandPrix(raceId))
     }
+  }
 }
 
 function setGrandPrix(data) {
@@ -22,12 +23,36 @@ function setGrandPrix(data) {
     }
 }
 
-export function fetchGrandPrix(id) {
+function shouldFetchGrandPrix(state, raceId) {
+    var race = state.grandprixs.filter(gp => gp.round === raceId)
+    return race.length === 0
+}
+
+function fetchGrandPrix(id) {
   return dispatch => {
   return fetch(`http://ergast.com/api/f1/current/${id}/results.json`)
     .then(response => response.json())
     .then(json => dispatch(setGrandPrix(json)))
   }
+}
+
+/*
+  NAVIGATION
+*/
+
+export function fetchNavigationIfNeeded() {
+  return (dispatch, getState) => {
+    if (shouldFetchNavigation(getState())) {
+      return dispatch(fetchNavigation())
+    }
+  }
+}
+
+function setNavigation(navData) {
+    return {
+        type: actionTypes.NAVIGATION_SET,
+        navData: navData.MRData.RaceTable.Races
+    }
 }
 
 function fetchNavigation() {
@@ -44,13 +69,5 @@ function shouldFetchNavigation(state) {
     return true
   } else {
     return false
-  }
-}
-
-export function fetchNavigationIfNeeded() {
-  return (dispatch, getState) => {
-    if (shouldFetchNavigation(getState())) {
-      return dispatch(fetchNavigation())
-    }
   }
 }
