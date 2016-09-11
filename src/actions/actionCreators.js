@@ -9,16 +9,15 @@ function setNavigation(navData) {
 }
 
 function setGrandPrix(data) {
-    // TODO FETCH DATA HERE with name
     var race = data.MRData.RaceTable.Races[0]
-    console.log(data.MRData.RaceTable.Races[0])
     return {
         type: actionTypes.GRANDPRIX_SET,
         grandPrix: {
             name: race.raceName,
             round: race.round,
             date: race.date,
-            gpResults: race.Results
+            results: race.Results,
+            circuit: race.Circuit
         }
     }
 }

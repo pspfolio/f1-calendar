@@ -1,0 +1,3 @@
+Show race data
+FetchGrandPrix if needed
+Reducer do not add if already in state

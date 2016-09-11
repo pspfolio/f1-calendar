@@ -6,7 +6,6 @@ import GrandPrix from '../components/GrandPrix/GrandPrix'
 const GrandprixApp = React.createClass({
 
   componentDidMount() {
-    console.log(this.props.params)
     const { raceId } = this.props.params
     this.getData(raceId)
   },

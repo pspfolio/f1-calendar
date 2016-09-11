@@ -19,8 +19,9 @@ function grandPrix(state, action) {
         case GRANDPRIX_SET:
             return {
                 name: action.grandPrix.name,
-                winner: action.grandPrix.winner,
-                gpResults: action.grandPrix.gpResults
+                round: action.grandPrix.round,
+                circuit: action.grandPrix.circuit,
+                results: action.grandPrix.results
             }
         default:
             return state
