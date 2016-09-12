@@ -7,11 +7,20 @@ import Navigation from '../Navigation/Navigation';
 describe('<NavigationList />', () => {
 
     const navData = [
-        {time:'22 - 24 Jul',
-        name: 'Spanish'},
-        {time: '15 - 18 Oct',
-        name: 'Italian'}
+        {
+          date:'22 - 24 Jul',
+          raceName: 'Spanish'
+        },
+        {
+          date: '15 - 18 Oct',
+          raceName: 'Italian'
+        }
     ];
+
+    /*
+    name={nav.Circuit.Location.country}
+    raceId={nav.round}
+    */
 
     it('renders two navigation components', () => {
         const wrapper = shallow(<NavigationList navigation={navData} activeLinkName={'test'}/>);

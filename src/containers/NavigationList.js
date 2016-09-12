@@ -3,8 +3,7 @@ import NavigationList from '../components/NavigationList/NavigationList';
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        navigation: state.navigation,
-        activeLinkName: ownProps.params.name ? ownProps.params.name : ''
+        navigation: state.navigation
     }
 }
 
