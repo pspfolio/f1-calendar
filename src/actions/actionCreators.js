@@ -49,17 +49,15 @@ export function fetchNavigationIfNeeded() {
 }
 
 function setNavigation(navData) {
-  var nav = navData.MRData.RaceTable.Races.map(nav => {
-    return {
-      country: nav.Circuit.Location.country,
-      date: nav.date,
-      round: nav.round
-    }
-  });
-
   return {
     type: actionTypes.NAVIGATION_SET,
-    navData: nav
+    navData: navData.MRData.RaceTable.Races.map(nav => {
+      return {
+        country: nav.Circuit.Location.country,
+        date: nav.date,
+        round: nav.round
+      }
+    })
   }
 }
 

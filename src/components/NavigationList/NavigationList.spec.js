@@ -8,22 +8,23 @@ describe('<NavigationList />', () => {
 
     const navData = [
         {
-          date:'22 - 24 Jul',
-          raceName: 'Spanish'
+          country: 'Australia',
+          date: '2016-03-20',
+          round: '1'
         },
         {
-          date: '15 - 18 Oct',
-          raceName: 'Italian'
+          country: 'China',
+          date: '2016-04-20',
+          round: '2'
         }
     ];
 
-    /*
-    name={nav.Circuit.Location.country}
-    raceId={nav.round}
-    */
+    const params = {
+      raceId: '1'
+    }
 
     it('renders two navigation components', () => {
-        const wrapper = shallow(<NavigationList navigation={navData} activeLinkName={'test'}/>);
-        expect(wrapper.find(Navigation)).to.have.length(2);
+      const wrapper = shallow(<NavigationList navigation={navData} params={params} />);
+      expect(wrapper.find(Navigation)).to.have.length(2);
     })
 });
