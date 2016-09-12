@@ -3,7 +3,7 @@ import React from 'react';
 const Grandprix = React.createClass({
   render () {
     const { grandprix } = this.props
-    console.log(grandprix);
+
     let gp;
     if (grandprix) {
       gp = (

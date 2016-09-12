@@ -5,14 +5,10 @@
     display: -webkit-flex;
     display: flex;
 
-    width: 10%;
     min-height: 100%;
     flex-direction: column;
     justify-content: space-between;
-    -ms-align-items: center;
+    -ms-align-items: left;
     align-items: center;
-}
-
-.nav {
     padding: 1em 0;
 }

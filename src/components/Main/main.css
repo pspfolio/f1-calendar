@@ -8,3 +8,7 @@
     min-height:100vh;
     width: 100%;
 }
+
+.gp-container {
+  padding-left: 2.5em;
+}

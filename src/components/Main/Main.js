@@ -7,7 +7,7 @@ const Main = React.createClass({
         return(
             <div className="container">
                 <NavigationList className="nav" {...this.props}/>
-                <div className="container">
+                <div className="gp-container">
                     {React.cloneElement(this.props.children, this.props)}
                 </div>
             </div>
