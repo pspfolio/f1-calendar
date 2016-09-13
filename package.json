@@ -8,6 +8,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "chai": "^3.5.0",
+    "deep-get-set": "^1.0.0",
     "enzyme": "^2.4.1",
     "ignore-styles": "^4.0.0",
     "jsdom": "^9.4.1",
