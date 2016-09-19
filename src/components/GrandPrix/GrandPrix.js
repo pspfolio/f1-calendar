@@ -1,11 +1,14 @@
-import React from 'react';
+import React from 'react'
 import ResultTable from '../ResultTable/ResultTable'
+
+import './grandPrix.css'
 
 const Grandprix = React.createClass({
   render () {
     const { grandprix } = this.props
 
     let gp;
+    let winner;
     if (grandprix) {
       gp = (
         <ResultTable
@@ -20,13 +23,27 @@ const Grandprix = React.createClass({
         />
       )
 
+      winner = <p>{grandprix.results[0].Driver.familyName}</p>
+
     } else {
       gp = <h2>Not found</h2>
+      winner = <p>-</p>
     }
 
     return (
-      <div className="grand-prix">
-        {gp}
+      <div className="grandprix">
+        <div className="result">
+          <h2>Race result:</h2>
+          {gp}
+        </div>
+        <div className="result">
+          <h2>Qualifying result:</h2>
+          {gp}
+        </div>
+        <div className="winner">
+          <h2>Race winner:</h2>
+          {winner}
+        </div>
       </div>
     )
   }
