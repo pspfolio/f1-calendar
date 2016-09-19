@@ -24,7 +24,7 @@ describe('Grandprix reducer', () => {
       grandPrix: gp
     }
     const state = grandPrixReducer(undefined, action)
-    expect(state.length).to.be.equal(1);
+    expect(state).to.have.length(1);
     expect(state[0].name).to.be.equal(gp.name)
   })
 
@@ -40,9 +40,24 @@ describe('Grandprix reducer', () => {
       results: [ 'Kimi Raikkonen', 'Sebastian Vettel' ]
     }]
     const state = grandPrixReducer(initialState, action)
-    expect(state.length).to.be.equal(2)
+    expect(state).to.have.length(2)
     expect(state[1].name).to.be.equal(gp.name)
 
   });
+
+  it('adds qualifying results to state', () => {
+    const action = {
+      type: actionTypes.QUALIFYING_SET,
+      results: ['result1', 'result2'],
+      round: '1'
+    }
+
+    const initialState = [gp]
+
+    const state = grandPrixReducer(initialState, action)
+    expect(state[0].qualifying).to.not.be.undefined
+    expect(state[0].qualifying).to.have.property('results')
+    expect(state[0].qualifying).to.have.property('round')
+  })
 
 });

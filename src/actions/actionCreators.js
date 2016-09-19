@@ -1,16 +1,24 @@
 import fetch from 'isomorphic-fetch'
 import * as actionTypes from '../constants/actionTypes';
 
+export function fetchGrandPrixAndQualifyingResults(raceId) {
+  return (dispatch, getState) => {
+    return dispatch(fetchGrandPrixIfNeeded(raceId))
+  }
+}
+
 export function fetchGrandPrixIfNeeded(raceId) {
   return (dispatch, getState) => {
     if (shouldFetchGrandPrix(getState(), raceId)) {
-      return dispatch(fetchGrandPrix(raceId))
+      return dispatch(fetchGrandPrix(raceId)).then(() => {
+        return dispatch(fetchQualifying(raceId))
+      })
     }
   }
 }
 
 function setGrandPrix(data) {
-    var race = data.MRData.RaceTable.Races[0]
+    const race = data.MRData.RaceTable.Races[0]
     return {
         type: actionTypes.GRANDPRIX_SET,
         grandPrix: {
@@ -21,6 +29,15 @@ function setGrandPrix(data) {
             circuit: race.Circuit
         }
     }
+}
+
+function setQualifying(data) {
+  const qualifying = data.MRData.RaceTable.Races[0]
+  return {
+    type: actionTypes.QUALIFYING_SET,
+    results: qualifying.QualifyingResults,
+    round: qualifying.round
+  }
 }
 
 function shouldFetchGrandPrix(state, raceId) {
@@ -37,6 +54,14 @@ function fetchGrandPrix(id) {
         return dispatch(setGrandPrix(json))
       }
     })
+  }
+}
+
+function fetchQualifying(id) {
+  return dispatch => {
+    return fetch(`http://ergast.com/api/f1/current/${id}/qualifying.json`)
+      .then(response => response.json())
+      .then(json => dispatch(setQualifying(json)))
   }
 }
 

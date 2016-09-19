@@ -1,2 +1,3 @@
 export const NAVIGATION_SET = 'NAVIGATION_SET';
 export const GRANDPRIX_SET = 'GRANDPRIX_SET';
+export const QUALIFYING_SET = 'QUALIFYING_SET';
