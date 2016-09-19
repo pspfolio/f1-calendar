@@ -1,11 +1,3 @@
-/*
-  propseina saadaan {name: columnName, path: mistäObjektinPropertystahaetaan} array joka käydään läpi mapilla ja palautetaan
-  <th>tableHeader</th> itemejä. Se renderöidään <Table><thead><tr>{omaTh}</tr></thead></table>
-
-  saadaan oikea data, käydään Mapilla data läpi, sisällä haetaan for loopilla jokainen polku column datasta ja haetaan column.pathilla oikea data paikalleen.
-
-*/
-
 import React from 'react'
 import deep from 'deep-get-set'
 
