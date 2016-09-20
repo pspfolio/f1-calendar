@@ -61,7 +61,11 @@ function fetchQualifying(id) {
   return dispatch => {
     return fetch(`http://ergast.com/api/f1/current/${id}/qualifying.json`)
       .then(response => response.json())
-      .then(json => dispatch(setQualifying(json)))
+      .then(json => {
+        if(json.MRData.RaceTable.Races.length > 0) {
+          return dispatch(setQualifying(json))
+        }
+      })
   }
 }
 
