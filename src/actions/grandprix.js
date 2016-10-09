@@ -3,40 +3,11 @@ import * as actionTypes from '../constants/actionTypes';
 
 export function fetchGrandPrixAndQualifyingResults(raceId) {
   return (dispatch, getState) => {
-    return dispatch(fetchGrandPrixIfNeeded(raceId))
-  }
-}
-
-function fetchGrandPrixIfNeeded(raceId) {
-  return (dispatch, getState) => {
     if (shouldFetchGrandPrix(getState(), raceId)) {
       return dispatch(fetchGrandPrix(raceId)).then(() => {
         return dispatch(fetchQualifying(raceId))
       })
     }
-  }
-}
-
-function setGrandPrix(data) {
-    const race = data.MRData.RaceTable.Races[0]
-    return {
-        type: actionTypes.GRANDPRIX_SET,
-        grandPrix: {
-            name: race.raceName,
-            round: race.round,
-            date: race.date,
-            results: race.Results,
-            circuit: race.Circuit
-        }
-    }
-}
-
-function setQualifying(data) {
-  const qualifying = data.MRData.RaceTable.Races[0]
-  return {
-    type: actionTypes.QUALIFYING_SET,
-    results: qualifying.QualifyingResults,
-    round: qualifying.round
   }
 }
 
@@ -66,5 +37,28 @@ function fetchQualifying(id) {
           return dispatch(setQualifying(json))
         }
       })
+  }
+}
+
+function setGrandPrix(data) {
+    const race = data.MRData.RaceTable.Races[0]
+    return {
+        type: actionTypes.GRANDPRIX_SET,
+        grandPrix: {
+            name: race.raceName,
+            round: race.round,
+            date: race.date,
+            results: race.Results,
+            circuit: race.Circuit
+        }
+    }
+}
+
+function setQualifying(data) {
+  const qualifying = data.MRData.RaceTable.Races[0]
+  return {
+    type: actionTypes.QUALIFYING_SET,
+    results: qualifying.QualifyingResults,
+    round: qualifying.round
   }
 }

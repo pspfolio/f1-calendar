@@ -3,7 +3,6 @@ import * as actionTypes from '../constants/actionTypes';
 
 export function fetchNavigationIfNeeded() {
   return (dispatch, getState) => {
-    console.log('nav length', getState().navigation)
     if (getState().navigation.length === 0) {
       return dispatch(fetchNavigation())
     }
@@ -11,7 +10,6 @@ export function fetchNavigationIfNeeded() {
 }
 
 function fetchNavigation() {
-  console.log('fetch nav')
   return dispatch => {
     return fetch('http://ergast.com/api/f1/current.json')
       .then(response => response.json())

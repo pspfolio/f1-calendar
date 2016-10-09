@@ -4,4 +4,4 @@ import { fetchNavigationIfNeeded } from './navigation'
 export {
     fetchNavigationIfNeeded,
     fetchGrandPrixAndQualifyingResults
-};
+}
