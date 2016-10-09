@@ -1,7 +1,7 @@
-import { fetchGrandPrixAndQualifyingResults, fetchGrandPrixIfNeeded, fetchNavigationIfNeeded } from './actionCreators';
+import { fetchGrandPrixAndQualifyingResults } from './grandprix'
+import { fetchNavigationIfNeeded } from './navigation'
 
 export {
     fetchNavigationIfNeeded,
-    fetchGrandPrixIfNeeded,
     fetchGrandPrixAndQualifyingResults
 };
