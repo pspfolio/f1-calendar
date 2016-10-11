@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchDriverStandingsIfNeeded } from '../actions'
-import ChampionshipDriverStandings from '../components/ChampionshipDriverStandings/'
+import ChampionshipDriverStandings from '../components/DriverStandings/'
 
 const DriverStandings = React.createClass({
   componentDidMount() {
