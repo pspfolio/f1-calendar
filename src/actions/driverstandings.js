@@ -12,8 +12,7 @@ export function fetchDriverStandingsIfNeeded() {
 function fetchDriverstandings() {
   return dispatch => {
     return fetch('http://ergast.com/api/f1/current/driverStandings.json')
-      .then((response) => {
-        return response.json()})
+      .then(response => response.json())
       .then(json => dispatch(setDriverstandings(json)))
   }
 }

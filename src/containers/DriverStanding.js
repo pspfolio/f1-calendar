@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchDriverStandingsIfNeeded } from '../actions'
+import ChampionshipDriverStandings from '../components/ChampionshipDriverStandings/'
 
 const DriverStandings = React.createClass({
   componentDidMount() {
@@ -9,15 +10,16 @@ const DriverStandings = React.createClass({
   },
 
   render() {
+    const { driverStandings } = this.props
     return(
-      <h2>DriverStandings</h2>
+      <ChampionshipDriverStandings standings={driverStandings} />
     )
   }
 })
 
 function mapStateToProps(state) {
   return {
-    driverstandings: state.driverstandings
+    driverStandings: state.driverstandings
   }
 }
 
