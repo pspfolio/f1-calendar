@@ -5,8 +5,8 @@ import { Provider } from 'react-redux';
 import configureStore from './stores/configureStore';
 import { fetchNavigationIfNeeded } from './actions/';
 
-import Info from './components/Info/Info';
 import Main from './components/Main/Main';
+import DriverStandings from './containers/DriverStanding';
 import GrandPrix from './containers/GrandPrix';
 
 import './normalize.css';
@@ -19,7 +19,7 @@ const router = (
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" component={Main}>
-                <IndexRoute component={Info}></IndexRoute>
+                <IndexRoute component={DriverStandings}></IndexRoute>
                 <Route path="grandprix/:raceId/:name" component={GrandPrix}></Route>
             </Route>
         </Router>
