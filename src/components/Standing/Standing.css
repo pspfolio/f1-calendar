@@ -1,0 +1,21 @@
+.driver {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #394751;
+  justify-content: space-between;
+}
+
+.driver .name {
+  width: 100px;
+}
+
+.driver .position {
+  width: 20px;
+}
+
+.driver .points {
+  min-width: 25px;
+  text-align: right;
+}

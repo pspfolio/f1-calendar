@@ -1,0 +1,11 @@
+.driverChampionships h3 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #394751;
+}
+
+.driverChampionships ul {
+  list-style: none;
+  padding: 0;
+  width: 180px;
+}
