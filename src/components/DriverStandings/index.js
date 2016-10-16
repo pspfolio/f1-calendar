@@ -10,9 +10,9 @@ const ChampionshipDriverStandings = ({ standings }) => (
         return <Standing
           key={id}
           position={standing.position}
-          name={standing.Driver.familyName}
+          name={`${standing.Driver.givenName} ${standing.Driver.familyName}`}
           points={standing.points}
-          constructId={standing.Constructors[0].constructorId}/>
+          constructId={standing.Constructors.slice(-1).pop().constructorId}/>
       })}
     </ul>
   </div>

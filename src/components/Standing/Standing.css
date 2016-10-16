@@ -1,14 +1,10 @@
 .driver {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   font-size: 14px;
   font-weight: 400;
   color: #394751;
   justify-content: space-between;
-}
-
-.driver .name {
-  width: 100px;
 }
 
 .driver .position {
@@ -18,4 +14,79 @@
 .driver .points {
   min-width: 25px;
   text-align: right;
+}
+
+.driver .name {
+  width: 130px;
+  position: relative;
+}
+
+.driverName {
+  position: relative;
+  letter-spacing: .8px
+}
+
+.driverName::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  background-color: black;
+}
+
+.mercedes.driverName::after {
+  background-color: #2AB4A5;
+  box-shadow: 0px 3px 4px rgba(40, 180, 165, .5);
+}
+
+.red_bull.driverName::after {
+  background-color: #00007D;
+  box-shadow: 0px 3px 4px rgba(0, 0, 125, .5);
+}
+
+.ferrari.driverName::after {
+  background-color: #C30000;
+  box-shadow: 0px 3px 4px rgba(195, 0, 0, .5);
+}
+
+.williams.driverName::after {
+  background-color: #69C8F4;
+  box-shadow: 0px 3px 4px rgba(105, 200, 244, .5);
+}
+
+.force_india.driverName::after {
+  background-color: #FF5F0F;
+  box-shadow: 0px 3px 4px rgba(255, 95, 15, .5);
+}
+
+.mclaren.driverName::after {
+  background-color: #808080;
+  box-shadow: 0px 3px 4px rgba(128, 128, 128, .5);
+}
+
+.toro_rosso.driverName::after {
+  background-color: #0000FF;
+  box-shadow: 0px 3px 4px rgba(0, 0, 255, .5);
+}
+
+.haas.driverName::after {
+  background-color: #6C0000;
+  box-shadow: 0px 3px 4px rgba(108, 0, 0, .5);
+}
+
+.renault.driverName::after {
+  background-color: #FFD800;
+  box-shadow: 0px 3px 4px rgba(255, 216, 0, .5);
+}
+
+.manor.driverName::after {
+  background-color: #323232;
+  box-shadow: 0px 3px 4px rgba(50, 50, 50, .5);
+}
+
+.sauber.driverName::after {
+  background-color: #006EFF;
+  box-shadow: 0px 3px 4px rgba(0, 110, 255, .5);
 }
