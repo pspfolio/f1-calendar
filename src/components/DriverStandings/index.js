@@ -3,8 +3,11 @@ import Standing from '../Standing'
 import './DriverStandings.css'
 
 const ChampionshipDriverStandings = ({ standings }) => (
-  <div className="driverChampionships">
-  <h3>Driver standings</h3>
+  <div className='driverChampionships'>
+    <div className='championshipHeader'>
+      <h3>Driver standings</h3>
+      <img src='src/images/ArrowDown.svg' alt='arrow down'></img>
+    </div>
     <ul>
       {standings.map((standing, id) => {
         return <Standing

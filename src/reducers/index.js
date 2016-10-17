@@ -6,5 +6,5 @@ import standings from './standings'
 export default combineReducers({
     grandprixs,
     navigation,
-    driverstandings: standings
+    standings
 })

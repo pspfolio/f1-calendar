@@ -1,26 +1,39 @@
 import fetch from 'isomorphic-fetch'
 import * as actionTypes from '../constants/actionTypes'
+import * as uri from '../constants/'
 
 export function fetchDriverStandingsIfNeeded() {
   return (dispatch, getState) => {
-    if(getState().driverstandings && getState().driverstandings.length === 0) {
-      return dispatch(fetchDriverstandings())
+    if(getState().standings.driverstandings && getState().standings.driverstandings.length === 0) {
+      return dispatch(fetchStandings(uri.driverStandingsUrl, setDriverStandings)).then(() => {
+        return dispatch(fetchStandings(uri.constructorStandingsUrl, setConstructorStandings))
+      })
     }
   }
 }
 
-function fetchDriverstandings() {
+function fetchStandings(uri, createAction) {
   return dispatch => {
-    return fetch('http://ergast.com/api/f1/current/driverStandings.json')
+    return fetch(uri)
       .then(response => response.json())
-      .then(json => dispatch(setDriverstandings(json)))
+      .then(json => dispatch(createAction(json)))
   }
 }
 
-function setDriverstandings(data) {
-  var standings = data.MRData.StandingsTable.StandingsLists[0].DriverStandings
+function setDriverStandings(data) {
+  const { DriverStandings } = data.MRData.StandingsTable.StandingsLists[0]
   return {
     type: actionTypes.DRIVERSTANDINGS_SET,
-    data: standings
+    data: DriverStandings,
+    name: 'driverstandings'
+  }
+}
+
+function setConstructorStandings(data) {
+  const { ConstructorStandings } = data.MRData.StandingsTable.StandingsLists[0]
+  return {
+    type: actionTypes.CONSTRUCTORSTANDINGS_SET,
+    data: ConstructorStandings,
+    name: 'constructorstandings'
   }
 }
