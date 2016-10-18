@@ -6,7 +6,7 @@ import configureStore from './stores/configureStore';
 import { fetchNavigationIfNeeded } from './actions/';
 
 import Main from './components/Main/Main';
-import DriverStandings from './containers/DriverStanding';
+import Standings from './containers/Standings';
 import GrandPrix from './containers/GrandPrix';
 
 import './normalize.css';
@@ -19,7 +19,7 @@ const router = (
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" component={Main}>
-                <IndexRoute component={DriverStandings}></IndexRoute>
+                <IndexRoute component={Standings}></IndexRoute>
                 <Route path="grandprix/:raceId/:name" component={GrandPrix}></Route>
             </Route>
         </Router>

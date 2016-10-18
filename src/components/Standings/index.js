@@ -2,10 +2,10 @@ import React from 'react'
 import Standing from '../Standing'
 import './DriverStandings.css'
 
-const ChampionshipDriverStandings = ({ standings }) => (
+const ChampionshipDriverStandings = ({ standings, handleStandingChange, showDrivers }) => (
   <div className='driverChampionships'>
-    <div className='championshipHeader'>
-      <h3>Driver standings</h3>
+    <div onClick={handleStandingChange} className='championshipHeader'>
+      <h3>{showDrivers ? 'Driver standings' : 'Constructor standings'}</h3>
       <img src='src/images/ArrowDown.svg' alt='arrow down'></img>
     </div>
     <ul>
@@ -13,9 +13,9 @@ const ChampionshipDriverStandings = ({ standings }) => (
         return <Standing
           key={id}
           position={standing.position}
-          name={`${standing.Driver.givenName} ${standing.Driver.familyName}`}
+          name={standing.name}
           points={standing.points}
-          constructId={standing.Constructors.slice(-1).pop().constructorId}/>
+          constructId={standing.constructorId}/>
       })}
     </ul>
   </div>
