@@ -5,6 +5,7 @@
 .championshipHeader {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .championshipHeader h3 {
@@ -16,4 +17,19 @@
 .driverChampionships ul {
   list-style: none;
   padding: 0;
+}
+
+.fade-enter {
+  opacity: 0.01;
+  margin-top: -5px;
+  transition: opacity .3s ease-in, margin .3s ease-in;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  margin-top: 0px;
+}
+
+.fade-leave {
+  opacity: 0;
 }
