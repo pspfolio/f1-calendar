@@ -1,8 +1,8 @@
 import * as actionTypes from '../../constants/actionTypes'
 
 const initialState = {
-  driverstandings: [],
-  constructorstandings: []
+  driverStandings: [],
+  constructorStandings: []
 }
 
 export default function(state = initialState, action) {
@@ -12,7 +12,6 @@ export default function(state = initialState, action) {
       return Object.assign({}, state, {
         [action.name]: [...state[action.name], ...action.data]
       })
-      return result
     default:
       return state
   }

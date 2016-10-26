@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { fetchGrandPrixAndQualifyingResults } from '../actions'
 import GrandPrix from '../components/GrandPrix/GrandPrix'
 
-const GrandprixApp = React.createClass({
+const GrandprixContainer = React.createClass({
 
   componentDidMount() {
     const { raceId } = this.props.params
@@ -39,6 +39,6 @@ function mapStateToProps(state, ownProps) {
     }
 }
 
-const GP = connect(mapStateToProps)(GrandprixApp);
+const GP = connect(mapStateToProps)(GrandprixContainer);
 
 export default GP;

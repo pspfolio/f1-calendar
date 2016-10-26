@@ -11,7 +11,6 @@ export function fetchNavigationIfNeeded() {
 
 function fetchNavigation() {
   return dispatch => {
-    console.log("fetching nav")
     return fetch('http://ergast.com/api/f1/current.json')
       .then(response => response.json())
       .then(json => dispatch(setNavigation(json)))

@@ -2,9 +2,9 @@ import fetch from 'isomorphic-fetch'
 import * as actionTypes from '../constants/actionTypes'
 import * as uri from '../constants/'
 
-export function fetchDriverStandingsIfNeeded() {
+export function fetchStandingsIfNeeded() {
   return (dispatch, getState) => {
-    if(getState().standings.driverstandings && getState().standings.driverstandings.length === 0) {
+    if(getState().standings.driverStandings && getState().standings.driverStandings.length === 0) {
       return dispatch(fetchStandings(uri.driverStandingsUrl, setDriverStandings)).then(() => {
         return dispatch(fetchStandings(uri.constructorStandingsUrl, setConstructorStandings))
       })
@@ -25,7 +25,7 @@ function setDriverStandings(data) {
   return {
     type: actionTypes.DRIVERSTANDINGS_SET,
     data: DriverStandings,
-    name: 'driverstandings'
+    name: 'driverStandings'
   }
 }
 
@@ -34,6 +34,6 @@ function setConstructorStandings(data) {
   return {
     type: actionTypes.CONSTRUCTORSTANDINGS_SET,
     data: ConstructorStandings,
-    name: 'constructorstandings'
+    name: 'constructorStandings'
   }
 }

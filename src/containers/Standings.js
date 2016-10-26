@@ -1,19 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { fetchDriverStandingsIfNeeded } from '../actions'
+import { fetchStandingsIfNeeded } from '../actions'
 import Standings from '../components/Standings/'
 
 const StandingContainer = React.createClass({
   componentDidMount() {
     const { dispatch } = this.props
-    dispatch(fetchDriverStandingsIfNeeded())
+    dispatch(fetchStandingsIfNeeded())
   },
 
   getInitialState() {
     return { driverStanding: true }
   },
 
-  handleStandingChange() {
+  onStandingChange() {
     this.setState({ driverStanding: !this.state.driverStanding })
   },
 
@@ -23,7 +23,7 @@ const StandingContainer = React.createClass({
       <Standings
         showDrivers={this.state.driverStanding}
         standings={this.state.driverStanding ? drivers : constructors}
-        handleStandingChange={this.handleStandingChange} />
+        handleStandingChange={this.onStandingChange} />
     )
   }
 })
@@ -37,8 +37,8 @@ function initStanding(position, name, points, constructorId) {
   }
 }
 
-function initDrivers(driverstandings) {
-  const drivers = driverstandings.map((standing) => {
+function initDrivers(driverStandings) {
+  const drivers = driverStandings.map((standing) => {
     const name = `${standing.Driver.givenName} ${standing.Driver.familyName}`
     const constructorId = standing.Constructors.slice(-1).pop().constructorId
     return initStanding(standing.position, name, standing.points, constructorId)
@@ -47,8 +47,8 @@ function initDrivers(driverstandings) {
   return drivers
 }
 
-function initConstructors(constructorstandings) {
-  const constructors = constructorstandings.map((standing) => {
+function initConstructors(constructorStandings) {
+  const constructors = constructorStandings.map((standing) => {
     return initStanding(standing.position, standing.Constructor.name, standing.points, standing.Constructor.constructorId)
   })
 
@@ -56,8 +56,8 @@ function initConstructors(constructorstandings) {
 }
 
 function mapStateToProps(state) {
-  const drivers = initDrivers(state.standings.driverstandings)
-  const constructors = initConstructors(state.standings.constructorstandings)
+  const drivers = initDrivers(state.standings.driverStandings)
+  const constructors = initConstructors(state.standings.constructorStandings)
   return {
     drivers,
     constructors
