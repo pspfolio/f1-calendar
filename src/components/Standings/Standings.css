@@ -1,20 +1,21 @@
-.driverChampionships {
+.standings-container {
   width: 200px;
+  padding-left: 2.5em;
 }
 
-.championshipHeader {
+.standings-header {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
 }
 
-.championshipHeader h3 {
+.standings-header h3 {
   font-weight: 400;
   font-size: 18px;
   color: #394751;
 }
 
-.driverChampionships ul {
+.standings-container ul {
   list-style: none;
   padding: 0;
 }

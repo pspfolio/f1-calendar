@@ -4,8 +4,8 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import './Standings.css'
 
 const ChampionshipDriverStandings = ({ standings, handleStandingChange, showDrivers }) => (
-  <div className='driverChampionships'>
-    <div onClick={handleStandingChange} className='championshipHeader'>
+  <div className='standings-container'>
+    <div onClick={handleStandingChange} className='standings-header'>
       <h3>{showDrivers ? 'Driver standings' : 'Constructor standings'}</h3>
       <img src='src/images/ArrowDown.svg' alt='arrow down'></img>
     </div>

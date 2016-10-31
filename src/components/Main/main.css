@@ -24,10 +24,5 @@ h2 .light {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-
     margin: 0;
-}
-
-.gp-container {
-  padding-left: 2.5em;
 }

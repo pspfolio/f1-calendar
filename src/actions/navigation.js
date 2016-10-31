@@ -22,7 +22,8 @@ function setNavigation(navData) {
     type: actionTypes.NAVIGATION_SET,
     navData: navData.MRData.RaceTable.Races.map(nav => {
       return {
-        country: nav.Circuit.Location.country,
+        raceName: nav.raceName,
+        circuit: nav.Circuit,
         date: nav.date,
         round: nav.round
       }
