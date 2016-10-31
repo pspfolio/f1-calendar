@@ -1,5 +1,4 @@
 import React from 'react';
-import NavigationList from '../../containers/NavigationList';
 import './main.css';
 
 const Main = React.createClass({
