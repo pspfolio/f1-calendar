@@ -3,12 +3,14 @@ import './GrandPrixCards.css'
 
 const GPCard = ({data}) => (
   <div>
-    <ul>
+    <ul className='card-list'>
       {
         data.map((item) => {
-          return <div key={item.round} className='card'>
-            <div className={item.circuit.Location.country + ' flag'}></div>
-            <h3 className='card-title'>{item.raceName}</h3>
+          return <li key={item.round} className='card'>
+            <div className='card-header'>
+              <div className={item.circuit.Location.country + ' flag'}></div>
+              <h3 className='card-title'>{item.raceName}</h3>
+            </div>
             <div className='card-footer'>
               <span className='location'>
                 {`
@@ -20,7 +22,7 @@ const GPCard = ({data}) => (
                 {item.date}
               </span>
             </div>
-          </div>
+          </li>
         })
       }
     </ul>

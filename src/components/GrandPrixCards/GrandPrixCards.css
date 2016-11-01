@@ -1,6 +1,38 @@
-/*.card .flag, .Australia {
-  height: 17px;
-  width: 25px;
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.card {
+  width: 335px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  padding: 1.8em 1.1em;
+  margin-bottom: 3em;
+}
+
+.card-header {
+  display: flex;
+  padding-bottom: .8em;
+}
+
+.card .flag {
+  height: 20px;
+  width: 30px;
+  margin-right: 1em;
   background-color: red;
+}
+
+.card-title {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #505050;
+  margin: 0;
+}
+
+.Australia {
   background-image: url('../../images/australia.gif');
-}*/
+  background-size: cover;
+}
