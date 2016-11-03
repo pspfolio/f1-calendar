@@ -9,30 +9,128 @@
   width: 335px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
-  padding: 1.8em 1.1em;
+  padding: 1.8em 1.1em 1.5em 1.1em;
   margin-bottom: 3em;
 }
 
 .card-header {
   display: flex;
-  padding-bottom: .8em;
+  padding-bottom: 1.4em;
 }
 
 .card .flag {
   height: 20px;
   width: 30px;
   margin-right: 1em;
-  background-color: red;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-title {
   font-size: 1.1em;
   font-weight: 400;
-  color: #505050;
+  color: #394751;
   margin: 0;
 }
 
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #505050;
+}
+
+.card-footer .icon{
+  margin-right: .5em;
+}
+
+.card-footer .pipe {
+  margin: 0 .5em;
+}
+
 .Australia {
-  background-image: url('../../images/australia.gif');
-  background-size: cover;
+  background-image: url('../../images/flags/australia.jpg');
+}
+
+.Bahrain {
+  background-image: url('../../images/flags/bahrain.png');
+}
+
+.China {
+  background-image: url('../../images/flags/chinese.jpg');
+}
+
+.Russia {
+  background-image: url('../../images/flags/russia.jpg');
+}
+
+.Spain {
+  background-image: url('../../images/flags/spanish.jpg');
+}
+
+.Monaco {
+  background-image: url('../../images/flags/monaco.jpg');
+}
+
+.Canada {
+  background-image: url('../../images/flags/canada.jpg');
+}
+
+.Azerbaijan {
+  background-image: url('../../images/flags/europe.gif');
+}
+
+.Austria {
+  background-image: url('../../images/flags/austria.jpg');
+}
+
+.UK {
+  background-image: url('../../images/flags/british.jpg');
+}
+
+.Hungary {
+  background-image: url('../../images/flags/hungary.jpg');
+}
+
+.Germany {
+  background-image: url('../../images/flags/germany.jpg');
+}
+
+.Belgium {
+  background-image: url('../../images/flags/belgium.jpg');
+}
+
+.Italy {
+  background-image: url('../../images/flags/italy.jpg');
+}
+
+.Singapore {
+  background-image: url('../../images/flags/singapore.jpg');
+}
+
+.Malaysia {
+  background-image: url('../../images/flags/malaysia.jpg');
+}
+
+.Japan {
+  background-image: url('../../images/flags/japan.jpg');
+}
+
+.USA {
+  background-image: url('../../images/flags/usa.jpg');
+}
+
+.Mexico {
+  background-image: url('../../images/flags/mexican.jpg');
+}
+
+.Brazil {
+  background-image: url('../../images/flags/brazil.jpg');
+}
+
+.UAE {
+  background-image: url('../../images/flags/uae.jpg');
 }

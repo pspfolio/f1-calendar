@@ -13,13 +13,23 @@ const GPCard = ({data}) => (
             </div>
             <div className='card-footer'>
               <span className='location'>
+                <img src='../src/images/location.svg' className='icon' alt='f1 circuit location pointer' />
                 {`
                   ${item.circuit.Location.locality},
                   ${item.circuit.Location.country}
                 `}
               </span>
+              <span className='pipe'>|</span>
               <span className='date'>
+                <img src='../src/images/calendar.svg' className='icon' alt='f1 calendar raceday' />
                 {item.date}
+              </span>
+              <span className='pipe'>|</span>
+              <span className='race-status'>
+                <img src='../src/images/checkeredflag.svg' className='icon' alt='f1 race status' />
+                {
+                  new Date(item.date) < new Date() ? 'Finished' : 'Upcoming'
+                }
               </span>
             </div>
           </li>

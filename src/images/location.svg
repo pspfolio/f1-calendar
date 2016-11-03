@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-405.000000, -270.000000)" fill="#2AB4A5">
+            <g id="Info" transform="translate(405.000000, 269.000000)">
+                <g id="location" transform="translate(0.000000, 1.000000)">
+                    <path d="M3.91884474,6.63983772 C2.81354321,6.63983772 1.91863643,5.74460756 1.91863643,4.63983772 C1.91863643,3.53631762 2.81354321,2.63983772 3.91884474,2.63983772 C5.02372965,2.63983772 5.91863643,3.53631762 5.91863643,4.63983772 C5.91863643,5.74460756 5.02372965,6.63983772 3.91884474,6.63983772 M6.82844317,1.17075945 C5.26632601,-0.390253148 2.73376523,-0.390253148 1.171373,1.17075945 C-0.236155356,2.57803595 -0.394320062,5.22840212 0.800579911,6.82049195 L4.00045822,11.4400002 L7.20033653,6.82049195 C8.39413623,5.22840212 8.23597152,2.57803595 6.82844317,1.17075945" id="Fill-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
