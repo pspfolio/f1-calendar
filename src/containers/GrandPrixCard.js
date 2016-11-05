@@ -2,9 +2,22 @@ import React from 'react'
 import { connect } from 'react-redux'
 import GrandPrixCards from '../components/GrandPrixCards'
 
+function initGrandPrixCardData(races) {
+  var result = races.map((race) => {
+    return {
+      country: race.circuit.Location.country,
+      locality: race.circuit.Location.locality,
+      racename: race.raceName,
+      date: race.date
+    }
+  })
+
+  return result
+}
+
 function mapStateToProps(state) {
   return {
-    data: state.navigation
+    data: initGrandPrixCardData(state.navigation)
   }
 }
 

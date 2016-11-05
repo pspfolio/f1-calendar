@@ -6,7 +6,6 @@ import configureStore from './stores/configureStore'
 import { fetchNavigationIfNeeded } from './actions/'
 
 import Main from './components/Main/Main'
-import Standings from './containers/Standings'
 import GrandPrix from './containers/GrandPrix'
 import GrandPrixCards from './containers/GrandPrixCard'
 

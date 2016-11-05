@@ -1,0 +1,16 @@
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #505050;
+}
+
+.card-footer .icon{
+  margin-right: .5em;
+}
+
+.card-footer .pipe {
+  margin: 0 .5em;
+}

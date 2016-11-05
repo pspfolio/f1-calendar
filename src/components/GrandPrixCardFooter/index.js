@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './GrandPrixCardFooter.css'
+
 const GrandPrixCardFooter = ({locality, country, date}) => (
   <div className='card-footer'>
     <span className='location'>
