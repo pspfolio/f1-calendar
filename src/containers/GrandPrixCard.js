@@ -8,7 +8,8 @@ function initGrandPrixCardData(races) {
       country: race.circuit.Location.country,
       locality: race.circuit.Location.locality,
       racename: race.raceName,
-      date: race.date
+      date: race.date,
+      round: race.round
     }
   })
 
