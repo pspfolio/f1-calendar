@@ -15,9 +15,4 @@ const GPCard = ({data}) => (
   </div>
 )
 
-/*
-<GrandPrixCardHeader country={item.circuit.Location.country} racename={item.raceName} />
-<GrandPrixCardFooter locality={item.circuit.Location.locality} country={item.circuit.Location.country} date={item.date} />
-*/
-
 export default GPCard
