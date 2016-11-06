@@ -4,14 +4,14 @@ const initialState = [];
 
 export default function(state = initialState, action) {
     switch(action.type) {
-        case actionTypes.NAVIGATION_SET:
-            return setNavigation(state, action);
+        case actionTypes.CARDS_SET:
+            return setCards(state, action);
         default:
             return state;
     }
 }
 
-function setNavigation(state, action) {
-    const { navData } = action;
-    return [...state, ...navData ];
+function setCards(state, action) {
+    const { cardData } = action;
+    return [...state, ...cardData ];
 }

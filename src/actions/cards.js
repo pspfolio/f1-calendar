@@ -3,7 +3,7 @@ import * as actionTypes from '../constants/actionTypes';
 
 export function fetchCardsIfNeeded() {
   return (dispatch, getState) => {
-    if (getState().navigation.length === 0) {
+    if (getState().cards.length === 0) {
       return dispatch(fetchCards())
     }
   }
@@ -19,8 +19,8 @@ function fetchCards() {
 
 function setCards(cards) {
   return {
-    type: actionTypes.NAVIGATION_SET,
-    navData: cards.MRData.RaceTable.Races.map(card => {
+    type: actionTypes.CARDS_SET,
+    cardData: cards.MRData.RaceTable.Races.map(card => {
       return {
         raceName: card.raceName,
         circuit: card.Circuit,

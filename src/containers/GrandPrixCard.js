@@ -18,7 +18,7 @@ function initGrandPrixCardData(races) {
 
 function mapStateToProps(state) {
   return {
-    data: initGrandPrixCardData(state.navigation)
+    data: initGrandPrixCardData(state.cards)
   }
 }
 
