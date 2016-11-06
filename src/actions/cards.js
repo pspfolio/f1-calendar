@@ -1,31 +1,31 @@
 import fetch from 'isomorphic-fetch'
 import * as actionTypes from '../constants/actionTypes';
 
-export function fetchNavigationIfNeeded() {
+export function fetchCardsIfNeeded() {
   return (dispatch, getState) => {
     if (getState().navigation.length === 0) {
-      return dispatch(fetchNavigation())
+      return dispatch(fetchCards())
     }
   }
 }
 
-function fetchNavigation() {
+function fetchCards() {
   return dispatch => {
     return fetch('http://ergast.com/api/f1/current.json')
       .then(response => response.json())
-      .then(json => dispatch(setNavigation(json)))
+      .then(json => dispatch(setCards(json)))
   }
 }
 
-function setNavigation(navData) {
+function setCards(cards) {
   return {
     type: actionTypes.NAVIGATION_SET,
-    navData: navData.MRData.RaceTable.Races.map(nav => {
+    navData: cards.MRData.RaceTable.Races.map(card => {
       return {
-        raceName: nav.raceName,
-        circuit: nav.Circuit,
-        date: nav.date,
-        round: nav.round
+        raceName: card.raceName,
+        circuit: card.Circuit,
+        date: card.date,
+        round: card.round
       }
     })
   }

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import { Provider } from 'react-redux'
 import configureStore from './stores/configureStore'
-import { fetchNavigationIfNeeded } from './actions/'
+import { fetchCardsIfNeeded } from './actions/'
 
 import Main from './components/Main/Main'
 import GrandPrix from './containers/GrandPrix'
@@ -13,7 +13,7 @@ import './normalize.css';
 import './index.css';
 
 const store = configureStore();
-store.dispatch(fetchNavigationIfNeeded());
+store.dispatch(fetchCardsIfNeeded());
 
 const router = (
     <Provider store={store}>

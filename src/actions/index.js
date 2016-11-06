@@ -1,9 +1,9 @@
 import { fetchGrandPrixAndQualifyingResults } from './grandprix'
-import { fetchNavigationIfNeeded } from './navigation'
+import { fetchCardsIfNeeded } from './cards'
 import { fetchStandingsIfNeeded } from './standings'
 
 export {
-    fetchNavigationIfNeeded,
+    fetchCardsIfNeeded,
     fetchGrandPrixAndQualifyingResults,
     fetchStandingsIfNeeded
 }
