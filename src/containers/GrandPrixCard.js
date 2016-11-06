@@ -1,6 +1,21 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { fetchCardsIfNeeded } from '../actions/'
 import GrandPrixCards from '../components/GrandPrixCards'
+
+const GrandPrixCardsContainer = React.createClass({
+  componentDidMount() {
+    const { dispatch } = this.props
+    dispatch(fetchCardsIfNeeded())
+  },
+
+  render() {
+    const { data } = this.props
+    return(
+        <GrandPrixCards data={data} />
+    )
+  }
+})
 
 function initGrandPrixCardData(races) {
   var result = races.map((race) => {
@@ -22,4 +37,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(GrandPrixCards)
+export default connect(mapStateToProps)(GrandPrixCardsContainer)

@@ -13,7 +13,6 @@ import './normalize.css';
 import './index.css';
 
 const store = configureStore();
-store.dispatch(fetchCardsIfNeeded());
 
 const router = (
     <Provider store={store}>
