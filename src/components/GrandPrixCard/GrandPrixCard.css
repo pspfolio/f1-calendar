@@ -1,7 +1,11 @@
 .card {
-  width: 335px;
+  width: 360px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
   padding: 1.8em 1.1em 1.5em 1.1em;
+}
+
+.card-link {
   margin-bottom: 3em;
+  border-bottom: 0;
 }

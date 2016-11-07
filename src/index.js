@@ -19,7 +19,7 @@ const router = (
         <Router history={browserHistory}>
             <Route path="/" component={Main}>
                 <IndexRoute component={GrandPrixCards}></IndexRoute>
-                <Route path="grandprix/:raceId/:name" component={GrandPrix}></Route>
+                <Route path="grandprix/:raceId" component={GrandPrix}></Route>
             </Route>
         </Router>
     </Provider>
