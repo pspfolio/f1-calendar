@@ -10,6 +10,7 @@
     "chai": "^3.5.0",
     "deep-get-set": "^1.0.0",
     "enzyme": "^2.4.1",
+    "google-maps": "^3.2.1",
     "ignore-styles": "^4.0.0",
     "jsdom": "^9.4.1",
     "mocha": "^2.5.3",

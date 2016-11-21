@@ -1,8 +1,8 @@
 .driver {
   display: flex;
   margin-bottom: 32px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   color: #394751;
   width: 200px;
   justify-content: space-between;

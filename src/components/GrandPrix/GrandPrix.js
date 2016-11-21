@@ -1,16 +1,23 @@
 import React from 'react'
 import ResultTable from '../ResultTable/ResultTable'
+import GoogleMaps from '../GoogleMap'
 
 import './grandPrix.css'
 
 const Grandprix = React.createClass({
+  getInitialState() {
+    return {
+      resultRace: true
+    }
+  },
+
   render () {
     const { grandprix } = this.props
     return (
       <div className="grandprix">
         <div className="result">
           <h2>Race result:</h2>
-          {grandprix ?
+          {grandprix && this.state.resultRace ?
             <ResultTable
               headers={[
                 {name: 'Pos.', path: 'position'},
@@ -24,7 +31,7 @@ const Grandprix = React.createClass({
         </div>
         <div className="result">
           <h2>Qualifying result:</h2>
-          {grandprix && grandprix.qualifying ?
+          {grandprix && grandprix.qualifying && !this.state.resultRace ?
             <ResultTable
               headers={[
                 {name: 'Pos.', path: 'position'},
