@@ -10,7 +10,7 @@ const ChampionshipDriverStandings = ({ standings, handleStandingChange, showDriv
       <img src='/src/images/ArrowDown.svg' alt='arrow down'></img>
     </div>
     <ReactCSSTransitionGroup
-      component="ul"
+      component='ul'
       transitionName='fade'
       transitionEnterTimeout={300}
       transitionLeaveTimeout={10}>

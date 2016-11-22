@@ -4,7 +4,7 @@ import GrandPrixCard from '../GrandPrixCard'
 import './GrandPrixCards.css'
 
 const GPCard = ({data}) => (
-  <div>
+  <div className="card-container">
     <ul className='card-list'>
       {
         data.map((item) => {

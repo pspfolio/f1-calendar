@@ -7,7 +7,6 @@ const ResultTable = React.createClass({
 
     const header = headers.map(header => {
       return <th key={header.name}>{header.name}</th>
-
     })
 
     const body = results.map(result => {

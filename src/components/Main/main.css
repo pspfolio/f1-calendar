@@ -17,12 +17,3 @@ header h2 {
 h2 .light {
   font-weight: 400;
 }
-
-.container {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    margin: 0;
-}

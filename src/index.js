@@ -7,7 +7,7 @@ import { fetchCardsIfNeeded } from './actions/'
 
 import Main from './components/Main/Main'
 import GrandPrix from './containers/GrandPrix'
-import GrandPrixCards from './containers/GrandPrixCard'
+import Frontpage from './components/Frontpage'
 
 import './normalize.css';
 import './index.css';
@@ -18,7 +18,7 @@ const router = (
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" component={Main}>
-                <IndexRoute component={GrandPrixCards}></IndexRoute>
+                <IndexRoute component={Frontpage}></IndexRoute>
                 <Route path="grandprix/:raceId" component={GrandPrix}></Route>
             </Route>
         </Router>
