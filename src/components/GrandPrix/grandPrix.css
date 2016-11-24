@@ -22,34 +22,6 @@
   width: 50%;
 }
 
-.tab {
-  position: relative;
-  text-align: center;
-  font-size: 1.5em;
-  width: 50%;
-  padding: 1.2em 0;
-  cursor: pointer;
-  overflow: hidden;
-  transition: .3s linear all;
-}
-
-.tab:hover {
-  color: #2AB4A5;
-}
-
-.tab.active:hover{
-  color: #353535;
-}
-
-.tab::before {
-  transition: .3s linear all;
-  content: '';
-  position: absolute;
-  height: 4px;
-  background-color: #2AB4A5;
-  top: 0;
-}
-
 .tab.race::before {
   left: 0;
   right: 100%;

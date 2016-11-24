@@ -1,6 +1,7 @@
 import React from 'react'
 import ResultTable from '../ResultTable/ResultTable'
 import GoogleMaps from '../GoogleMap'
+import Tab from '../Tab'
 
 import './grandPrix.css'
 
@@ -30,12 +31,8 @@ const Grandprix = React.createClass({
         <h1 className="results">Results</h1>
         <div className="tabs">
           <div className="tab-results">
-            <div onClick={this.handleQualifyingClick} className={'tab qualifying ' + (!this.state.resultRace ? 'active' : '')}>
-              Qualifying
-            </div>
-            <div onClick={this.handleRaceClick} className={'tab race ' + (this.state.resultRace ? 'active' : '')}>
-              Race
-            </div>
+            <Tab handleClick={this.handleQualifyingClick} active={!this.state.resultRace} text="Qualifying" />
+            <Tab handleClick={this.handleRaceClick} active={this.state.resultRace} text="Race" />
           </div>
         </div>
 
