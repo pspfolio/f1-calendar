@@ -1,0 +1,31 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-results {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #ececec;
+  width: 50%;
+}
+
+.tab.race::before {
+  left: 0;
+  right: 100%;
+}
+
+.tab.qualifying::before {
+  left: 100%;
+  right: 0;
+}
+
+.tab.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background-color: #2AB4A5;
+}

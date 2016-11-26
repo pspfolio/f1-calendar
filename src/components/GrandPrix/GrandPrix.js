@@ -1,23 +1,34 @@
 import React from 'react'
 import ResultTable from '../ResultTable/ResultTable'
 import GoogleMaps from '../GoogleMap'
-import Tab from '../Tab'
-
+import Tabs from '../Tabs'
 import './grandPrix.css'
 
 const Grandprix = React.createClass({
   getInitialState() {
     return {
-      resultRace: true
+      activeIndex: 0,
+      tabs: [
+        {
+          index: 0,
+          name: 'Qualifying',
+          handleClick: this.handleQualifyingClick
+        },
+        {
+          index: 1,
+          name: 'Race',
+          handleClick: this.handleRaceClick
+        }
+      ]
     }
   },
 
   handleQualifyingClick() {
-    this.setState({resultRace: false})
+    this.setState({activeIndex: 0})
   },
 
   handleRaceClick() {
-    this.setState({resultRace: true})
+    this.setState({activeIndex: 1})
   },
 
   render () {
@@ -29,15 +40,9 @@ const Grandprix = React.createClass({
           {grandprix ? <p>{grandprix.results[0].Driver.familyName}</p> : null}
         </div>
         <h1 className="results">Results</h1>
-        <div className="tabs">
-          <div className="tab-results">
-            <Tab handleClick={this.handleQualifyingClick} active={!this.state.resultRace} text="Qualifying" />
-            <Tab handleClick={this.handleRaceClick} active={this.state.resultRace} text="Race" />
-          </div>
-        </div>
-
+        <Tabs tabs={this.state.tabs} activeIndex={this.state.activeIndex} />
         <div className="result-tables">
-          {grandprix && this.state.resultRace ?
+          {grandprix && !this.state.activeIndex ?
             <ResultTable
               headers={[
                 {name: 'Pos.', path: 'position'},
@@ -49,7 +54,7 @@ const Grandprix = React.createClass({
               results={ grandprix.results } />
             : null }
 
-            {grandprix && !this.state.resultRace ?
+            {grandprix && this.state.activeIndex ?
               <ResultTable
                 headers={[
                   {name: 'Pos.', path: 'position'},
