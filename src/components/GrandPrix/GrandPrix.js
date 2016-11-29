@@ -15,7 +15,7 @@ const Grandprix = React.createClass({
         </div>
         <h1 className="results">Results</h1>
         <Tabs>
-          <Tab text="Qualifying">
+          <Tab name="Qualifying">
             <ResultTable
               headers={[
                 {name: 'Pos.', path: 'position'},
@@ -27,7 +27,7 @@ const Grandprix = React.createClass({
               ]}
               results={ qualifyingResult } />
           </Tab>
-          <Tab text="Race">
+          <Tab name="Race">
             <ResultTable
               headers={[
                 {name: 'Pos.', path: 'position'},
