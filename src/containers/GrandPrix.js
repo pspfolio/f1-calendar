@@ -21,22 +21,24 @@ const GrandprixContainer = React.createClass({
   },
 
   render () {
-    const { grandprix } = this.props;
     return(
-      <GrandPrix grandprix={grandprix} />
+      <GrandPrix {...this.props} />
     )
   }
 })
 
 const getGrandprix = (grandprixs, round) => {
-  var result = grandprixs.filter((gp) => gp.round === round);
+  const result = grandprixs.filter((gp) => gp.round === round);
   return result[0];
 }
 
 function mapStateToProps(state, ownProps) {
-    return {
-        grandprix: getGrandprix(state.grandprixs, ownProps.params.raceId)
+    const gp = getGrandprix(state.grandprixs, ownProps.params.raceId)
+    const result = {
+        raceResult: gp ? gp.results : [],
+        qualifyingResult: gp && gp.qualifying ? gp.qualifying.results : []
     }
+    return result;
 }
 
 const GP = connect(mapStateToProps)(GrandprixContainer);

@@ -1,19 +1,32 @@
 import React from 'react'
-import Tab from '../Tab'
 import './tabs.css'
 
 const Tabs = React.createClass({
+  getInitialState() {
+    return {
+      selected: 0
+    }
+  },
+
+  handleClick(index) {
+    this.setState({selected: index})
+  },
 
   render() {
     return (
-      <div className="tabs">
-        <div className="tab-results">
+      <div>
+      <div className="tabs-flex">
+        <div className="tab-results-flex">
           {
-            this.props.tabs.map((tab) => {
-              return <Tab key={tab.name} handleClick={tab.handleClick} active={tab.index === this.props.activeIndex} text={tab.name} />
+            this.props.children.map((item, index) => {
+              return <h3 className={`tab ${item.props.text.toLowerCase()} ${index === this.state.selected ? 'active' : ''}`} key={index} onClick={this.handleClick.bind(this, index)}>{item.props.text}</h3>
             })
           }
         </div>
+      </div>
+      <div className="tabs-flex">
+        {this.props.children[this.state.selected]}
+      </div>
       </div>
     )
   }

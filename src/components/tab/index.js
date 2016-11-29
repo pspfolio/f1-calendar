@@ -1,10 +1,14 @@
 import React from 'react'
 import './tab.css'
 
-const Tab = ({handleClick, active, text}) => (
-  <div onClick={handleClick} className={`tab ${text.toLowerCase()} ${active ? 'active' : ''}`}>
-    {text}
-  </div>
-)
+const Tab = React.createClass({
+  render() {
+    return(
+      <div>
+        {this.props.children}
+      </div>
+    )
+  }
+})
 
 export default Tab;

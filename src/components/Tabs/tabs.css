@@ -1,13 +1,17 @@
-.tabs {
+.tabs-flex {
   display: flex;
   justify-content: center;
 }
 
-.tab-results {
+.tab-results-flex {
   display: flex;
   justify-content: center;
   border-top: 2px solid #ececec;
   width: 50%;
+}
+
+.tab {
+  margin: 0;
 }
 
 .tab.race::before {
