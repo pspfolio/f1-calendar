@@ -14,23 +14,23 @@ const Tabs = React.createClass({
 
   render() {
     return (
-      <div>
-      <div className="tabs-flex">
-        <div className="tab-results-flex">
-          {
-            this.props.children.map((item, index) => {
-              return
-              <h3 className={`tab ${item.props.name.toLowerCase()} ${index === this.state.selected ? 'active' : ''}`} 
-                key={index}
-                onClick={this.handleClick.bind(this, index)}>{item.props.name}
-              </h3>
-            })
-          }
+      <div className="tabs-container">
+        <div className="tabs-flex">
+          <div className="tab-results-flex">
+            {
+              this.props.children.map((item, index) => {
+                return
+                <h3 className={`tab ${item.props.name.toLowerCase()} ${index === this.state.selected ? 'active' : ''}`}
+                  key={index}
+                  onClick={this.handleClick.bind(this, index)}>{item.props.name}
+                </h3>
+              })
+            }
+          </div>
         </div>
-      </div>
-      <div className="tabs-flex">
-        {this.props.children[this.state.selected]}
-      </div>
+        <div className="tabs-flex">
+          {this.props.children[this.state.selected]}
+        </div>
       </div>
     )
   }
