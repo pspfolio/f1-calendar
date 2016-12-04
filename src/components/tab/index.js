@@ -1,5 +1,4 @@
 import React from 'react'
-import './tab.css'
 
 const Tab = React.createClass({
   render() {
