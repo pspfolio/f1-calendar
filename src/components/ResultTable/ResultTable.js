@@ -1,5 +1,6 @@
 import React from 'react'
 import deep from 'deep-get-set'
+import './resultTable.css'
 
 const ResultTable = React.createClass({
   render() {
