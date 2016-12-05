@@ -37,6 +37,7 @@ function mapStateToProps(state, ownProps) {
     const result = {
         raceResult: gp ? gp.results : [],
         qualifyingResult: gp && gp.qualifying ? gp.qualifying.results : [],
+        name: gp ? gp.name : ''
     }
     return result;
 }

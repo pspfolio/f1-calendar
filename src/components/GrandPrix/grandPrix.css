@@ -1,16 +1,3 @@
 .grandprix {
   min-width: 500px;
 }
-
-.results {
-  text-align: center;
-  font-size: 2.8em;
-  font-weight: 300;
-  margin: 2em 0;
-  color: #353535;
-}
-
-.result-tables {
-  display: flex;
-  justify-content: center;
-}
