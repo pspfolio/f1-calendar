@@ -5,7 +5,7 @@ import Tab from '../Tab'
 import './GrandPrixResults.css'
 
 export default ({qualifyingResult, raceResult}) => (
-<div classNamee='ResultContainer'>
+<div className='ResultContainer'>
   <h3 className="results">Results</h3>
   <Tabs>
     <Tab name="Qualifying">
