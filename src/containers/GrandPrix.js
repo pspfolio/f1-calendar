@@ -36,7 +36,7 @@ function mapStateToProps(state, ownProps) {
     const gp = getGrandprix(state.grandprixs, ownProps.params.raceId)
     const result = {
         raceResult: gp ? gp.results : [],
-        qualifyingResult: gp && gp.qualifying ? gp.qualifying.results : []
+        qualifyingResult: gp && gp.qualifying ? gp.qualifying.results : [],
     }
     return result;
 }

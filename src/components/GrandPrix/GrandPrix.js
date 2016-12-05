@@ -6,7 +6,7 @@ import './grandPrix.css'
 
 export default ({ raceResult, qualifyingResult }) => (
   <div className="grandprix">
-    <h1 className="results">Results</h1>
+    <h2 className="results">Results</h2>
     <Tabs>
       <Tab name="Qualifying">
         <ResultTable
