@@ -5,8 +5,10 @@ import './grandPrix.css'
 
 export default ({ raceResult, qualifyingResult, name }) => (
   <div className="grandprix">
-    <h1>{ name }</h1>
-    <GrandPrixHeader />
+
+    <GrandPrixHeader>
+      <h1 id='race-name'>{ name }</h1>
+    </GrandPrixHeader>
     <GrandPrixResults raceResult={raceResult} qualifyingResult={qualifyingResult} />
   </div>
 )
