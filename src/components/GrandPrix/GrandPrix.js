@@ -3,11 +3,14 @@ import GrandPrixResults from '../GrandPrixResults'
 import GrandPrixHeader from '../GrandPrixHeader'
 import './grandPrix.css'
 
-export default ({ raceResult, qualifyingResult, name }) => (
+export default ({ raceResult, qualifyingResult, name, circuitName }) => (
   <div className="grandprix">
 
     <GrandPrixHeader>
-      <h1 id='race-name'>{ name }</h1>
+      <div id='race-header'>
+        <h1 className='zero-margin light-text'>{ name }</h1>
+        <h3 className='zero-margin light-text'>{ circuitName }</h3>
+      </div>
     </GrandPrixHeader>
     <GrandPrixResults raceResult={raceResult} qualifyingResult={qualifyingResult} />
   </div>

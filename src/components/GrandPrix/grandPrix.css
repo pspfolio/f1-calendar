@@ -2,9 +2,17 @@
   min-width: 500px;
 }
 
-#race-name {
+#race-header {
   color: #fff;
-  font-size: 3em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 300;
   margin-left: 150px;
+}
+
+.zero-margin {
+  margin: 0;
+}
+
+.light-text {
+  font-weight: 300;
 }
