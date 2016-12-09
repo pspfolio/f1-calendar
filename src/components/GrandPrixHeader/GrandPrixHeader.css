@@ -1,5 +1,5 @@
 .image-preview {
-  height: 650px;
+  height: 450px;
   position: relative;
   overflow: hidden;
 }
@@ -26,6 +26,10 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .flex-item {

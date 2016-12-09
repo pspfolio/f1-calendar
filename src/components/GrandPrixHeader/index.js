@@ -21,7 +21,7 @@ const GrandPrixHeader = React.createClass({
 
     return(
       <div className='image-preview' style={styles}>
-        <div className='flex-container'>
+        <div className='flex-container flex-column'>
           <div className='flex-item'>
             <img className='header-image' src='../../src/images/australia.jpg' alt='national' />
           </div>
