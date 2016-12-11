@@ -38,7 +38,9 @@ function mapStateToProps(state, ownProps) {
         raceResult: gp ? gp.results : [],
         qualifyingResult: gp && gp.qualifying ? gp.qualifying.results : [],
         name: gp ? gp.name : '',
-        circuitName: gp ? gp.circuit.circuitName : ''
+        circuitName: gp ? gp.circuit.circuitName : '',
+        headerImgPath: gp ? `${gp.circuit.Location.country}.jpg` : ''
+
     }
     return result;
 }
