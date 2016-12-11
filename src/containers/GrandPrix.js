@@ -28,8 +28,8 @@ const GrandprixContainer = React.createClass({
 })
 
 const getGrandprix = (grandprixs, round) => {
-  const result = grandprixs.filter((gp) => gp.round === round);
-  return result[0];
+  const result = grandprixs.filter((gp) => gp.round === round)[0];
+  return result;
 }
 
 function mapStateToProps(state, ownProps) {
