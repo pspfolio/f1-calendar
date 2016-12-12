@@ -6,7 +6,7 @@ import './GrandPrixResults.css'
 
 export default ({qualifyingResult, raceResult}) => (
 <div className='ResultContainer'>
-  <h3 className="results">Results</h3>
+  <h2 className='gp-header'>Results</h2>
   <Tabs>
     <Tab name="Qualifying">
       <ResultTable

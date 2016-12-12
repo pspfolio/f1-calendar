@@ -1,0 +1,11 @@
+.flex-item.stat-item {
+  flex: 1;
+  text-align: center;
+}
+.flex-item.stat-item h3 {
+  font-size: 1.5em;
+}
+
+.flex-item.stat-item p {
+  font-size: 1.2em;
+}
