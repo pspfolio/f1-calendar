@@ -3,10 +3,9 @@ import GrandPrixResults from '../GrandPrixResults'
 import GrandPrixHeader from '../GrandPrixHeader'
 import './grandPrix.css'
 
-export default ({ raceResult, qualifyingResult, name, circuitName, headerImgPath }) => (
+export default ({ raceResult, qualifyingResult, circuitName, headerImgPath, fastestLap }) => (
   <div className="grandprix">
-
-    <GrandPrixHeader circuitName={circuitName} headerImgPath={headerImgPath} />
+    <GrandPrixHeader circuitName={circuitName} headerImgPath={headerImgPath} fastestLap={fastestLap} />
     <GrandPrixResults raceResult={raceResult} qualifyingResult={qualifyingResult} />
   </div>
 )

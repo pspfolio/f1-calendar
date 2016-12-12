@@ -32,6 +32,16 @@ const getGrandprix = (grandprixs, round) => {
   return result;
 }
 
+const getFastestLap = (gp) => {
+  const result = gp.results.filter((result) => { return result.FastestLap && result.FastestLap.rank === '1' })[0]
+  return result
+}
+
+const getWinnerName = (gp) => {
+  const winner = gp.results[0].Driver
+  return `${winner.givenName} ${winner.familyName}`
+}
+
 function mapStateToProps(state, ownProps) {
     const gp = getGrandprix(state.grandprixs, ownProps.params.raceId)
     const result = {
@@ -39,9 +49,11 @@ function mapStateToProps(state, ownProps) {
         qualifyingResult: gp && gp.qualifying ? gp.qualifying.results : [],
         name: gp ? gp.name : '',
         circuitName: gp ? gp.circuit.circuitName : '',
-        headerImgPath: gp ? `${gp.circuit.Location.country}.jpg` : ''
-
+        headerImgPath: gp ? `${gp.circuit.Location.country}.jpg` : '',
+        fastestLap: gp ? getFastestLap(gp) : {},
+        raceWinner: gp ? getWinnerName(gp) : ''
     }
+    console.log("MAPSTATE", result)
     return result;
 }
 
