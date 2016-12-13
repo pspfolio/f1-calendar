@@ -3,9 +3,14 @@
   text-align: center;
 }
 .flex-item.stat-item h3 {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .flex-item.stat-item p {
   font-size: 1.2em;
+}
+
+.stat-icon {
+  width: 80px;
+  height: 80px;
 }
