@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-fetch'
-import * as actionTypes from '../constants/actionTypes';
+import * as actionTypes from '../constants/actionTypes'
+import { apiBaseUrl } from '../constants'
 
 export function fetchGrandPrixAndQualifyingResults(raceId) {
   return (dispatch, getState) => {
@@ -18,7 +19,7 @@ function shouldFetchGrandPrix(state, raceId) {
 
 function fetchGrandPrix(id) {
   return dispatch => {
-  return fetch(`http://ergast.com/api/f1/current/${id}/results.json`)
+  return fetch(`${apiBaseUrl}/${id}/results.json`)
     .then(response => response.json())
     .then(json => {
       if(json.MRData.RaceTable.Races.length > 0) {
@@ -30,7 +31,7 @@ function fetchGrandPrix(id) {
 
 function fetchQualifying(id) {
   return dispatch => {
-    return fetch(`http://ergast.com/api/f1/current/${id}/qualifying.json`)
+    return fetch(`${apiBaseUrl}/${id}/qualifying.json`)
       .then(response => response.json())
       .then(json => {
         if(json.MRData.RaceTable.Races.length > 0) {
