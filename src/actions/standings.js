@@ -5,9 +5,10 @@ import * as uri from '../constants/'
 export function fetchStandingsIfNeeded() {
   return (dispatch, getState) => {
     if(getState().standings.driverStandings && getState().standings.driverStandings.length === 0) {
-      return dispatch(fetchStandings(uri.driverStandingsUrl, setDriverStandings)).then(() => {
-        return dispatch(fetchStandings(uri.constructorStandingsUrl, setConstructorStandings))
-      })
+      return Promise.all([
+        dispatch(fetchStandings(uri.driverStandingsUrl, setDriverStandings)),
+        dispatch(fetchStandings(uri.constructorStandingsUrl, setConstructorStandings))
+      ])
     }
   }
 }
