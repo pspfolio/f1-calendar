@@ -17,12 +17,15 @@ function fetchStandings(uri, createAction) {
   return dispatch => {
     return fetch(uri)
       .then(response => response.json())
-      .then(json => dispatch(createAction(json)))
+      .then(json => {
+        const result = json.MRData.StandingsTable.StandingsLists[0]
+        dispatch(createAction(result))
+      })
   }
 }
 
 function setDriverStandings(data) {
-  const { DriverStandings } = data.MRData.StandingsTable.StandingsLists[0]
+  const { DriverStandings } = data
   return {
     type: actionTypes.DRIVERSTANDINGS_SET,
     data: DriverStandings,
@@ -31,7 +34,7 @@ function setDriverStandings(data) {
 }
 
 function setConstructorStandings(data) {
-  const { ConstructorStandings } = data.MRData.StandingsTable.StandingsLists[0]
+  const { ConstructorStandings } = data
   return {
     type: actionTypes.CONSTRUCTORSTANDINGS_SET,
     data: ConstructorStandings,
