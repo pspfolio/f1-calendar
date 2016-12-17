@@ -10,9 +10,10 @@ const GrandprixContainer = React.createClass({
     this.getData(raceId)
   },
 
-  componentWillReceiveProps(props) {
-    const { raceId } = props.params
-    this.getData(raceId)
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.params.raceId !== this.props.params.raceId) {
+      this.getData(nextProps.params.raceId)
+    }
   },
 
   getData(id) {
@@ -53,7 +54,7 @@ function mapStateToProps(state, ownProps) {
         fastestLap: gp ? getFastestLap(gp) : {},
         raceWinner: gp ? getWinnerName(gp) : ''
     }
-    console.log("MAPSTATE", result)
+
     return result;
 }
 

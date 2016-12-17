@@ -6,9 +6,11 @@ export function fetchGrandPrixAndQualifyingResults(raceId) {
   return (dispatch, getState) => {
     if (shouldFetchGrandPrix(getState(), raceId)) {
       return Promise.all([
-        dispatch(fetchData(`${apiBaseUrl}/${raceId}/results.json`, setGrandPrix)),
-        dispatch(fetchData(`${apiBaseUrl}/${raceId}/qualifying.json`, setQualifying))
-      ])
+        fetchData(`${apiBaseUrl}/${raceId}/results.json`),
+        fetchData(`${apiBaseUrl}/${raceId}/qualifying.json`)
+      ]).then((item) => {
+        dispatch(setGrandPrix(item[0], item[1]))
+      })
     }
   }
 }
@@ -18,36 +20,24 @@ function shouldFetchGrandPrix(state, raceId) {
     return race.length === 0
 }
 
-function fetchData(url, setFunc) {
-  return dispatch => {
-    return fetch(url)
-      .then(response => response.json())
-      .then(json => {
-        if(json.MRData.RaceTable.Races.length > 0) {
-          const result = json.MRData.RaceTable.Races[0]
-          return dispatch(setFunc(result))
-        }
-      })
-    }
+function fetchData(url) {
+  return fetch(url).then(response => response.json())
 }
 
-function setGrandPrix(data) {
-    return {
-        type: actionTypes.GRANDPRIX_SET,
-        grandPrix: {
-            name: data.raceName,
-            round: data.round,
-            date: data.date,
-            results: data.Results,
-            circuit: data.Circuit
-        }
-    }
-}
-
-function setQualifying(data) {
+function setGrandPrix(raceResults, qualifyingResults) {
+  const race = raceResults.MRData.RaceTable.Races[0]
+  const qualifying = qualifyingResults.MRData.RaceTable.Races[0]
   return {
-    type: actionTypes.QUALIFYING_SET,
-    results: data.QualifyingResults,
-    round: data.round
+    type: actionTypes.GRANDPRIX_SET,
+    grandPrix: {
+      name: race.raceName,
+      round: race.round,
+      date: race.date,
+      results: race.Results,
+      circuit: race.Circuit,
+      qualifying: {
+        results: qualifying.QualifyingResults,
+      }
+    }
   }
 }
