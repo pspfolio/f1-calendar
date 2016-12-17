@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-fetch'
-import * as actionTypes from '../constants/actionTypes';
+import * as actionTypes from '../constants/actionTypes'
+import { apiBaseUrl } from '../constants'
 
 export function fetchCardsIfNeeded() {
   return (dispatch, getState) => {
@@ -11,7 +12,7 @@ export function fetchCardsIfNeeded() {
 
 function fetchCards() {
   return dispatch => {
-    return fetch('http://ergast.com/api/f1/current.json')
+    return fetch(`${apiBaseUrl}.json`)
       .then(response => response.json())
       .then(json => dispatch(setCards(json)))
   }
