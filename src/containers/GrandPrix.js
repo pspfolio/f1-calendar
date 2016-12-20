@@ -52,7 +52,8 @@ function mapStateToProps(state, ownProps) {
         circuitName: gp ? gp.circuit.circuitName : '',
         headerImgPath: gp ? `${gp.circuit.Location.country}.jpg` : '',
         fastestLap: gp ? getFastestLap(gp) : {},
-        raceWinner: gp ? getWinnerName(gp) : ''
+        raceWinner: gp ? getWinnerName(gp) : '',
+        retiredDrivers: gp ? gp.results.filter(result => {return result.positionText === 'R' || result.positionText === 'W'}).length : ''
     }
 
     return result;
