@@ -10,11 +10,6 @@ describe('<Tab />', () => {
     text: 'Tab1'
   }
 
-  it('adding active class if active prop is true', () => {
-    const element = shallow(<Tab active={data.active} text={data.text} />)
-    expect(element.find('.active')).to.have.length(1)
-  })
-
   it('not adding active class if active prop is false', () => {
     const element = shallow(<Tab active={!data.active} text={data.text} />)
     expect(element.find('.active')).to.have.length(0)

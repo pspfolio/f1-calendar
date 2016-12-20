@@ -6,27 +6,22 @@ import Tab from '../Tab'
 
 describe('<Tabs />', () => {
 
-  const data = {
-    activeIndex: 0,
-    tabs: [
-      {
-        index: 0,
-        name: 'Qualifying',
-      },
-      {
-        index: 1,
-        name: 'Race',
-      },
-      {
-        index: 2,
-        name: 'Race',
-      },
-    ]
-  }
+  it(`Rendering 1 active children`, () => {
+    const element = shallow(
+    <Tabs>
+      <Tab name='test1' />
+      <Tab name='test2' />
+    </Tabs>)
+    expect(element.find(Tab)).to.have.length(1)
+  })
 
-  it(`Rendering ${data.tabs.length} Tab elements`, () => {
-    const element = shallow(<Tabs tabs={data.tabs} />)
-    expect(element.find(Tab)).to.have.length(data.tabs.length)
+  it('setting active class to first element by default', () => {
+    const element = shallow(
+    <Tabs>
+      <Tab name='test1' id='test1' />
+      <Tab name='test2' id='test2'/>
+    </Tabs>)
+    expect(element.find('.active')).to.have.length(1)
   })
 
 })
