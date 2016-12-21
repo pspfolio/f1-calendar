@@ -1,25 +1,11 @@
-.image-preview {
-  height: 450px;
+.header-preview {
+  height: 85vh;
   position: relative;
   overflow: hidden;
 }
 
-.image {
-  height: 100%;
-  margin: 0 auto;
-  opacity: 0;
-  transition: 0.3s opacity ease-in-out;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: -9999px;
-  right: -9999px;
-  max-width: 100%;
-}
-.image-loaded {
-  opacity: 1;
-}
-
-.header-image {
-  test-align: center;
+#race-country {
+  font-size: 6em;
+  color: #505050;
+  margin: 0;
 }

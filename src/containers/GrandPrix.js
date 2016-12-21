@@ -50,7 +50,7 @@ function mapStateToProps(state, ownProps) {
         qualifyingResult: gp && gp.qualifying ? gp.qualifying.results : [],
         name: gp ? gp.name : '',
         circuitName: gp ? gp.circuit.circuitName : '',
-        headerImgPath: gp ? `${gp.circuit.Location.country}.jpg` : '',
+        raceLocation: gp ? gp.circuit.Location.country : '',
         fastestLap: gp ? getFastestLap(gp) : {},
         raceWinner: gp ? getWinnerName(gp) : '',
         retiredDrivers: gp ? gp.results.filter(result => {return result.positionText === 'R' || result.positionText === 'W'}).length : ''
