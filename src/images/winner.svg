@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="154px" height="172px" viewBox="0 0 154 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="109.871951 103.288775 125.264256 105.949029 139.6399 104.1548 139.1399 168.020826 124.373884 156.847259 109.1399 168.020826"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30.5" height="64.7320508" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polygon id="path-3" points="14.8719509 103.288775 30.2642558 105.949029 44.6399001 104.1548 44.1399001 168.020826 29.373884 156.847259 14.1399001 168.020826"></polygon>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30.5" height="64.7320508" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(0.000000, 1.000000)">
+            <text id="1" font-family="Roboto-Light, Roboto" font-size="72" font-weight="300" letter-spacing="2.57142901" fill="#2AB4A5">
+                <tspan x="56" y="84">1</tspan>
+            </text>
+            <path d="M134.5,152.5 L110,111" id="Line" stroke="#2AB4A5" stroke-width="2" stroke-linecap="square"></path>
+            <path d="M43.5,152.5 L19,111" id="Line" stroke="#2AB4A5" stroke-width="2" stroke-linecap="square" transform="translate(31.500000, 132.000000) scale(-1, 1) translate(-31.500000, -132.000000) "></path>
+            <use id="Rectangle-6-Copy" stroke="#979797" mask="url(#mask-2)" stroke-width="4" transform="translate(124.389900, 135.654800) scale(-1, 1) rotate(30.000000) translate(-124.389900, -135.654800) " xlink:href="#path-1"></use>
+            <use id="Rectangle-6-Copy" stroke="#979797" mask="url(#mask-4)" stroke-width="4" transform="translate(29.389900, 135.654800) rotate(30.000000) translate(-29.389900, -135.654800) " xlink:href="#path-3"></use>
+            <circle id="Oval-Copy" stroke="#979797" stroke-width="2" cx="77" cy="60" r="60"></circle>
+            <circle id="Oval-Copy-2" stroke="#979797" stroke-width="2" cx="77" cy="60" r="55"></circle>
+        </g>
+    </g>
+</svg>

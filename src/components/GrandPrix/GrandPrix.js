@@ -11,7 +11,7 @@ export default ({ raceResult, qualifyingResult, circuitName, headerImgPath, fast
     <div className='stats-container'>
       <h2 className='gp-header'>STATS</h2>
       <div className='flex-container'>
-        <GrandPrixStat header='Winner' text={raceWinner} icon='' />
+        <GrandPrixStat header='Winner' icon='winner.svg' text={raceWinner} />
         <GrandPrixStat header='Num of retired' icon='cone.svg' text={retiredDrivers} />
         <GrandPrixStat header="Fastest lap" icon='fastestlap.svg' text={ fastestLap.Driver ? `${fastestLap.Driver.familyName } (${fastestLap.FastestLap.Time.time})` : null}/>
       </div>
