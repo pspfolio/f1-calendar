@@ -49,6 +49,7 @@ function mapStateToProps(state, ownProps) {
         raceResult: gp ? gp.results : [],
         qualifyingResult: gp && gp.qualifying ? gp.qualifying.results : [],
         name: gp ? gp.name : '',
+        date: gp ? gp.date : '',
         circuitName: gp ? gp.circuit.circuitName : '',
         raceLocation: gp ? gp.circuit.Location.country : '',
         fastestLap: gp ? getFastestLap(gp) : {},

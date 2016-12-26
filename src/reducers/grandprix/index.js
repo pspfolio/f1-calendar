@@ -16,6 +16,7 @@ function grandPrix(state, action) {
     round: grandPrix.round,
     circuit: grandPrix.circuit,
     results: grandPrix.results,
+    date: grandPrix.date,
     qualifying: {
       results: grandPrix.qualifying.results,
       round: grandPrix.round

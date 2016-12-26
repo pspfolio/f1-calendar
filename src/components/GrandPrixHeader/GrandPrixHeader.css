@@ -1,3 +1,19 @@
+@keyframes up-and-down {
+  0% {margin-bottom: 0;}
+  50% {margin-bottom: 5px;}
+  100% {margin-bottom: 0;}
+}
+
+.header-flex {
+  height: 80%;
+  width: 100%;
+}
+
+.header-bottom-flex {
+  height: 20%;
+  width: 100%;
+}
+
 .header-preview {
   height: 85vh;
   position: relative;
@@ -8,4 +24,19 @@
   font-size: 6em;
   color: #505050;
   margin: 0;
+}
+
+.margin-basic {
+  margin: 1em;
+}
+
+.bottom {
+  align-self: flex-end;
+  animation-name: up-and-down ;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.bottom img {
+  width: 35px;
 }
