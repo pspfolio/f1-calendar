@@ -34,6 +34,10 @@
   text-align: center;
   font-size: 2.8em;
   font-weight: 300;
-  margin: 2em 0;
+  margin: 2.5em 0;
   color: #353535;
+}
+
+.margin-bottom {
+  margin-bottom: 150px;
 }
