@@ -51,6 +51,7 @@ function mapStateToProps(state, ownProps) {
         name: gp ? gp.name : '',
         date: gp ? gp.date : '',
         circuitName: gp ? gp.circuit.circuitName : '',
+        circuitId: gp? gp.circuit.circuitId : '',
         raceLocation: gp ? gp.circuit.Location.country : '',
         fastestLap: gp ? getFastestLap(gp) : {},
         raceWinner: gp ? getWinnerName(gp) : '',

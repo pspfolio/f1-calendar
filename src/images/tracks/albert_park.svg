@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1016px" height="530px" viewBox="0 0 1016 530" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>AustraliaRacetrack</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AustraliaRacetrack" transform="translate(0.000000, 1.000000)">
+            <path d="M795,500 C795,500 408,514 398,508 C388,502 378.837474,463.492351 357,455 C349.743372,452.177978 336.960835,451.306276 324.287282,451.271021 C305.524203,451.218827 287,453 287,453 L232,455 C232,455 184.254294,453.410951 143,446 C101.745706,438.589049 54.9342809,425.092363 53,418 C51.4605472,412.35534 62,399 62,399 L79,374 C79,374 87.3484968,361.981112 85,352 C84.0002082,347.750885 68,332 68,332 L17,288 C17,288 6.3449801,279.172972 5,271 C3.6550199,262.827028 8,245 8,245 C8,245 11,211 17,187 C20.5630683,172.747727 50,101 50,101 C50,101 50.4034188,70.7310541 59,65 C61.5395982,63.3069346 77,64 83,63 C89,62 101.718951,58.0316606 108,55 C115.812207,51.2292988 140.739396,29.1931057 149,25 C181.280782,8.61418442 191,10 198,9 C200.478737,8.6458947 222.697321,9.56968745 249,24 C296.976579,50.3211602 361,98 361,98 C361,98 351,112 351,121 C351,124.488335 348.951965,135.571638 353,147 C359.396008,165.057129 375,185 375,185 C375,185 405.804648,226.804648 416,237 C422,243 457,276 491,286 C554.639154,304.717398 633,291 646,286 C659,281 689,236 689,236 L807,225 C807,225 836.032565,223.236448 849,226 C866.532565,229.736448 886,240 886,240 C886,240 1009,303 1012,312 C1015,321 969,426 969,426 C969,426 961.695514,437.050748 950,439 C938.304486,440.949252 913,434 913,434 L852,415 C852,415 840.415452,410.723032 834,415 C827.584548,419.276968 831,429 831,429 L835,474 C835,474 835,486 825,493 C815,500 795,500 795,500 Z" id="Line" stroke="#505050" stroke-width="8" stroke-linecap="square" transform="translate(508.441145, 259.219487) rotate(1.000000) translate(-508.441145, -259.219487) "></path>
+            <path d="M553,492.5 L553,523.5" id="Line" stroke="#2AB4A5" stroke-width="10" stroke-linecap="square"></path>
+            <text id="Sector-1" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="122" y="358">Sector 1</tspan>
+            </text>
+            <text id="Sector-2" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="418" y="110">Sector 2</tspan>
+            </text>
+            <text id="Sector-3" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="800" y="358">Sector 3</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
