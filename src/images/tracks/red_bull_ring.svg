@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1133px" height="634px" viewBox="0 0 1133 634" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>red_bull_ring</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="red_bull_ring" transform="translate(3.000000, 4.000000)">
+            <path d="M968.5,365.5 L852.5,468.5 L687,613 C687,613 673.903014,626.450197 667,626 C660.096986,625.549803 641,610 641,610 C641,610 529.727947,551.148655 459,507 C388.272053,462.851345 327,414 327,414 C327,414 285,376 231,342 C177,308 65,273 65,273 L16,256 C16,256 1.40034536,250.202763 1,247 C0.599654638,243.797237 14,229 24,220 C34,211 58.332898,191.719907 128,163 C197.667102,134.280093 182,141 269,119 C308.560681,108.99615 386.373429,83.2690525 450,60 C513.626571,36.7309475 586,7 586,7 C586,7 606.160125,-2.1357382 613,2 C619.839875,6.1357382 629,7 629,33 C629,59 621.900156,81.3057727 608,107 C594.099844,132.694227 577,150 558,162 C539,174 477,195 477,195 L387,220 C387,220 366.732101,227.950521 356,247 C345.267899,266.049479 343.157247,275.593359 348,299 C352.842753,322.406641 362,328 371,337 C380,346 474,406 474,406 C474,406 488,414 497,414 C501.527287,414 514.651888,414.618662 525,412 C535.348112,409.381338 544.665781,403.616612 550,399 C560.733524,389.710446 567,380 572,363 C577,346 573.926898,335.868686 585,312 C596.073102,288.131314 603.095315,278.835094 617,266 C630.904685,253.164906 666,233 666,233 L968.5,78 C968.5,78 986,67 1004,69 C1022,71 1037,86 1037,86 L1119,175 C1119,175 1126.15969,185.612208 1126,192 C1125.84031,198.387792 1119,216 1119,216 C1119,216 1100,243 1081,265 C1062,287 982,354 982,354 L968.5,365.5 Z" id="Line" stroke="#505050" stroke-width="8" stroke-linecap="square"></path>
+            <path d="M867.534409,473.299534 L846,451" id="Line" stroke="#2AB4A5" stroke-width="10" stroke-linecap="square"></path>
+            <text id="Sector-2" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="227" y="34">Sector 2</tspan>
+            </text>
+            <text id="Sector-1" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="206" y="530">Sector 1</tspan>
+            </text>
+            <text id="Sector-3" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="892" y="180">Sector 3</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
