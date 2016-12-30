@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="792px" height="663px" viewBox="0 0 792 663" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>hungaroring</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hungaroring" transform="translate(5.000000, 4.000000)">
+            <path d="M15,596 L18,25.4855336 C18,25.4855336 16.2518909,8.43059649 25,3 C33.7481091,-2.43059649 46,1 53,5 C60,9 87,32 100,68 C113,104 108,149 108,149 L105,263 C105,263 100,309 133,319 C166,329 173,299 173,299 L192,253 C192,253 201.312269,226.834604 217,215 C232.687731,203.165396 275,195 275,195 C275,195 453.292653,165.473966 479,162 C504.707347,158.526034 519.323975,163.983493 534,160 C548.676025,156.016507 559,140 559,140 L606,78 C606,78 620,53 650,58 C680,63 681,93 681,93 L693,220 C693,220 693.077227,232.598854 690,236 C686.922773,239.401146 675,242 675,242 C675,242 662.221995,243.312288 659,245 C655.778005,246.687712 649,254 649,254 L605,313 C605,313 589,331 589,344 C589,357 596,371 596,371 L623,437 C623,437 627.67724,450.684326 624,460 C620.32276,469.315674 608,475 608,475 L507,510 C507,510 483.990684,522.140561 474,533 C464.009316,543.859439 461,560 461,560 L450,624 C450,624 443.829049,642.213276 434,649 C424.170951,655.786724 401,654 401,654 L332,652 L221,643 C221,643 184.756861,638.835771 173,623 C161.243139,607.164229 171,570 171,570 C171,570 182.765792,526.55597 187,505 C191.234208,483.44403 193,467 193,458 C193,449 186,405 150,399 C114,393 111,431 111,431 C111,431 106.050274,469.74497 105,489 C103.949726,508.25503 102,596 102,596 C102,596 99,631 58,631 C17,631 15,596 15,596 Z" id="Line" stroke="#505050" stroke-width="8" stroke-linecap="square"></path>
+            <path d="M0.252360725,463.152881 L31.2476393,463.693906" id="Line" stroke="#2AB4A5" stroke-width="10" stroke-linecap="square"></path>
+            <text id="Sector-1" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="125" y="33">Sector 1</tspan>
+            </text>
+            <text id="Sector-2" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="649" y="454">Sector 2</tspan>
+            </text>
+            <text id="Sector-3" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="239" y="454">Sector 3</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

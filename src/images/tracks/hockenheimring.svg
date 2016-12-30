@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1148px" height="651px" viewBox="0 0 1148 651" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>hockenheimring</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hockenheimring" transform="translate(6.000000, 4.000000)">
+            <path d="M14,210 C14,210 14.2816652,185.150835 21,176 C23.737045,172.271956 31.328044,162.361189 41,154 C55.0687711,141.837862 91,119 91,119 C91,119 120.946613,103.671388 136,97 C151.053387,90.3286124 179,80 179,80 L386,5 C386,5 414,-7 423,10 C432,27 417,64 417,64 C417,64 409,85.6150106 409,94 C409,102.384989 417,125 417,125 C417,125 495,283 642,370 C789,457 1117,468 1117,468 C1117,468 1138,465 1138,479 C1138,493 1117,492 1117,492 L845,528 C845,528 811.195344,533.006257 802,531 C792.804656,528.993743 765,511 765,511 L642,425 C642,425 627,411 616,413 C605,415 598,435 598,435 L590,455 C590,455 585.392985,472.354339 585,481 C584.607015,489.645661 594,525 579,546 C564,567 519,569 519,569 L316,595 C316,595 261.371086,599.900785 245,591 C228.628914,582.099215 213,539 213,539 L171,383 C171,383 166,356 140,356 C114,356 111,385 111,385 L103,445 C103,445 99.9430488,456.343255 107,471 C114.056951,485.656745 129,499 129,499 C129,499 140,516 142,528 C144,540 147,575 147,575 C147,575 147.138547,586.150615 145,590 C142.861453,593.849385 142.095515,596.427641 123,604 C103.904485,611.572359 87,613 87,613 C87,613 64.335083,612.545932 55,610 C45.664917,607.454068 40,605 33,598 C26,591 23.2778523,583.975923 21,577 C18.7221477,570.024077 16,549 16,549 L14,210 Z" id="Line" stroke="#505050" stroke-width="8" stroke-linecap="square"></path>
+            <text id="Sector-1" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="106" y="175">Sector 1</tspan>
+            </text>
+            <text id="Sector-2" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="778" y="495">Sector 2</tspan>
+            </text>
+            <path d="M0,418 L30.9952785,418.541025" id="Line" stroke="#2AB4A5" stroke-width="10" stroke-linecap="square"></path>
+            <text id="Sector-3" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="153" y="646">Sector 3</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
