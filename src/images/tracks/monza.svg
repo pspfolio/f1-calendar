@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1130px" height="659px" viewBox="0 0 1130 659" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>monza</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="monza" transform="translate(4.000000, 4.000000)">
+            <path d="M451,591 C451,591 431.240593,592.320791 428,588 C424.759407,583.679209 428,572 428,562 C428,552 425.404877,548.857206 422,547 C418.595123,545.142794 403,556 403,556 C403,556 377.748361,577.616577 368,583 C358.251639,588.383423 345,591 336,591 L262,591 C262,591 193,586 158,547 C123,508 120,466 120,466 L91,278 C91,278 89.5083222,270.009987 87,267 C84.4916778,263.990013 76,260 76,260 C76,260 69.7901588,256.55737 68,254 C66.2098412,251.44263 62,240 62,240 L8,89 C8,89 -6,62 4,41 C14,20 37,15 37,15 L133,1 C133,1 150,-2 165,5 C180,12 193,36 193,36 L251,143 C251,143 265.71685,167.720817 274,179 C282.28315,190.279183 291,202 310,219 C329,236 509,392 509,392 C509,392 523,406 539,412 C555,418 561.993333,406.74086 576,409 C590.006667,411.25914 593.745864,425.759509 608,431 C622.254136,436.240491 644,434 644,434 L1068,434 C1068,434 1100,436 1111,449 C1122,462 1123,471 1119,496 C1115,521 1105.05475,537.235884 1091,553 C1076.94525,568.764116 1063.99939,573.667017 1045,579 C1026.00061,584.332983 986,589 986,589 L923,594 L451,591 Z" id="Line" stroke="#505050" stroke-width="8" stroke-linecap="square"></path>
+            <text id="Sector-1" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="191" y="654">Sector 1</tspan>
+            </text>
+            <text id="Sector-2" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="247" y="33">Sector 2</tspan>
+            </text>
+            <text id="Sector-3" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="908" y="387">Sector 3</tspan>
+            </text>
+            <path d="M752,610.995279 L752.541025,580" id="Line" stroke="#2AB4A5" stroke-width="10" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>
