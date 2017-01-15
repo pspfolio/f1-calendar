@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="907px" height="724px" viewBox="0 0 907 724" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>sepang</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sepang" transform="translate(4.000000, 4.000000)">
+            <path d="M701.5,375 L38.5,375 C38.5,375 -5.46326507e-14,373 -5.68434189e-14,344 C-5.68434189e-14,315 33,322 38.5,324 C44,326 63,346 81,333 C99,320 79,292 79,292 C79,292 34,246 59,172 C84,98 151,83 151,83 L424,3 C424,3 439.065532,-1.63171638 444,1 C448.934468,3.63171638 454,27 454,27 L468,163 C468,163 468,232 524,253 C580,274 614,241 614,241 L645,216 C645,216 665,202 691,204 C717,206 747,241 747,241 L861,395 C861,395 870.499759,407.623975 872,414 C873.500241,420.376025 865,437 865,437 L845,472 C845,472 839.336665,483.224534 835,486 C830.663335,488.775466 818,488 818,488 L727,486 L488,493 C488,493 468,493 465,503 C462,513 476,522 476,522 L518,549 C518,549 528,559 534,574 C540,589 536,619 536,619 C536,619 532.627646,646.342168 527,663 C521.372354,679.657832 511,693 511,693 C511,693 496,716 478,716 C460,716 439,693 439,693 L313,574 C313,574 300,558 283,558 C266,558 251,567 251,567 L193,589 C193,589 123,600 83,554 C64.6300886,532.874602 66.1418867,513.055015 74,503 C83.2527222,491.160484 101,491 101,491 L727,431 C727,431 755,429 755,403 C755,377 727,375 727,375 L701.5,375 Z" id="Line" stroke="#505050" stroke-width="8" stroke-linecap="square"></path>
+            <path d="M498.541025,390.995279 L498,360" id="Line" stroke="#2AB4A5" stroke-width="10" stroke-linecap="square"></path>
+            <text id="Sector-1" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="105" y="243">Sector 1</tspan>
+            </text>
+            <text id="Sector-2" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="765" y="164">Sector 2</tspan>
+            </text>
+            <text id="Sector-3" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" letter-spacing="1.28571451" fill="#2AB4A5">
+                <tspan x="189" y="668">Sector 3</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
